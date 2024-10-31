@@ -1,0 +1,253 @@
+/*--KEYWORD--*/
+
+
+.keyword {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3vw;
+    padding: 1vw;
+    margin-bottom: 12rem;
+}
+
+.keywordTxt {
+    margin-top: 8vh;
+    grid-column: span 1;
+    grid-row: span 2;
+    /*background-color: #1e1e1e;*/
+}
+
+.slider-container {
+    margin-top: 4rem;
+    grid-column: span 1;
+    grid-row: span 2;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    border: 1.2px solid #E0FD48;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.slider {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    transition: transform 0.3s ease;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e1e1e;
+}
+
+.slider div {
+    width: 80%;
+    height: 2rem;
+    min-height: 90px;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    font-size: 1.2rem;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.keyword1, .keyword3, .keyword5, .keyword6, .keyword7, .keyword9{
+    background-color: #e7e7e7;
+}
+
+.keyword2, .keyword4, .keyword8{
+    background-color: #E0FD48;
+}
+
+/* Firefox */
+.slider-container {
+    scrollbar-width: none;
+}
+
+/* Chrome, Safari, Edge */
+.slider-container::-webkit-scrollbar {
+    display: none;
+}
+
+.kw{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*--LOGO--*/
+
+
+.logo{
+    margin-bottom: 12rem;
+}
+
+.logoImg{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2vw;
+    padding: 2vw;
+    background-color: #1e1e1e;
+    border-radius: 20px;
+}
+
+.logoTxt{
+    margin-bottom: 3rem;
+}
+
+.typoL{
+    display: flex;
+    grid-column: span 2;
+    grid-row: span 1;
+    background-color: #101010;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgL{
+    display: flex;
+    grid-column: span 1;
+    grid-row: span 1;
+    background-color: #101010;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    width:200px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*--DESIGN SYSTEM--*/
+
+
+.designSystem{
+    margin-bottom: 12rem;
+}
+
+.systemTxt{
+    margin-bottom: 3rem;
+}
+
+/*.systemGrid-container{*/
+/*    width: 75%;*/
+/*    margin: 0 auto;*/
+/*}*/
+
+.systemGrid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2vw;
+    padding: 2vw;
+    background-color: #1e1e1e;
+    border-radius: 20px;
+}
+
+.font{
+    grid-column: span 2;
+    grid-row: span 2;
+    background-color: #ffffff;
+    border-radius: 15px;
+}
+
+.pretendard, .conthrax{
+    display: flex;
+}
+
+.mainColor{
+    grid-column: span 2;
+    grid-row: span 2;
+    background-color: #E0FD48;
+    border-radius: 15px;
+}
+
+.subColor1{
+    grid-column: span 2;
+    grid-row: span 1;
+    background-color: #FF3E3E;
+    border-radius: 15px;
+}
+
+.subColor2{
+    grid-column: span 1;
+    grid-row: span 1;
+    background-color: #0177FF;
+    border-radius: 15px;
+    padding-bottom: 4rem;
+
+}
+
+.subColor3{
+    grid-column: span 1;
+    grid-row: span 1;
+    background-color: #101010;
+    border-radius: 15px;
+    padding-bottom: 4rem;
+}
+
+.pretendard{
+    margin-bottom: 4rem;
+}
+
+.icon{
+    padding-bottom: 24rem;
+}
+
+.iconTxt{
+    margin-bottom: 3rem;
+}
+
+.icon-container {
+    width: 100vw;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* 화면 중앙에 맞추기 */
+    overflow: hidden; /* 넘침 방지 */
+}
+
+.icon-slider {
+    display: flex;
+    animation: slide 20s linear infinite;
+}
+
+.icon-slider img {
+    width: auto;
+    height: 50%;
+}
+.icon11 img {
+    width: auto;
+    height: 40%;
+}
+.icon0 {
+    width: 200px;
+    height: 200px;
+    background-color: #1e1e1e;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    flex-shrink: 0;
+    color: white;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-200px * 11 - 110px)); /* 아이콘 너비 * 개수 + (마진 * (개수-1)) */
+    }
+}
+
+

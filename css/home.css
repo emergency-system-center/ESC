@@ -1,0 +1,257 @@
+/*#home {*/
+/*    height: 135vh;*/
+/*    overflow: visible;*/
+/*    position: relative;*/
+/*    background-image: url("data:image/svg+xml,%3Csvg%20width%3D%22731%22%20height%3D%22488%22%20viewBox%3D%220%200%20731%20488%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M489.731%20456.984C455.946%20456.984%20428.457%20429.503%20428.457%20395.728V242.827C428.457%20206.714%20399.169%20177.435%20363.045%20177.435H218.274C184.489%20177.435%20157%20149.955%20157%20116.18V-63.7446C157%20-97.5193%20184.489%20-125%20218.274%20-125H398.269C432.054%20-125%20459.543%20-97.5193%20459.543%20-63.7446V89.1569C459.543%20125.269%20488.831%20154.548%20524.955%20154.548H669.742C703.527%20154.548%20731%20182.029%20731%20215.804V395.745C731%20429.519%20703.511%20457%20669.742%20457H489.747L489.731%20456.984Z%22%20fill%3D%22%23101010%22/%3E%3Crect%20x%3D%2231.8672%22%20y%3D%22180.739%22%20width%3D%2250.5788%22%20height%3D%22296.689%22%20transform%3D%22rotate(-36.0535%2031.8672%20180.739)%22%20fill%3D%22%23101010%22/%3E%3Crect%20x%3D%22176.25%22%20y%3D%22135.578%22%20width%3D%2250.5788%22%20height%3D%22296.689%22%20transform%3D%22rotate(23.9465%20176.25%20135.578)%22%20fill%3D%22%23101010%22/%3E%3Crect%20x%3D%22287.531%22%20y%3D%22238.08%22%20width%3D%2250.5788%22%20height%3D%22296.689%22%20transform%3D%22rotate(83.9465%20287.531%20238.08)%22%20fill%3D%22%23101010%22/%3E%3C/svg%3E"),*/
+/*    url("data:image/svg+xml,%3Csvg%20width%3D%221124%22%20height%3D%22968%22%20viewBox%3D%220%200%201124%20968%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M651.549%200.0319824C585.392%200.0319824%20531.563%2053.8131%20531.563%20119.912V419.147C531.563%20489.82%20474.212%20547.121%20403.476%20547.121H119.986C53.8288%20547.121%200%20600.902%200%20667V848.12C0%20914.219%2053.8288%20968%20119.986%20968H472.451C538.608%20968%20592.437%20914.219%20592.437%20848.12V719.885C592.437%20649.212%20649.788%20591.911%20720.524%20591.911H1004.05C1070.2%20591.911%201124%20538.13%201124%20472.032V295.956V119.88C1124%2053.7811%201070.17%200%201004.05%200H651.581L651.549%200.0319824Z%22%20fill%3D%22white%22%2F%3E%3C%2Fsvg%3E");*/
+/*    background-repeat: no-repeat, no-repeat;*/
+/*    background-position: left top, 7rem calc(80% + 4rem);*/
+/*    background-size: 27rem auto, 70rem auto, contain;*/
+
+/*}*/
+
+.bg-img {
+    position: absolute;
+    /*z-index: -2;*/
+    width: 100vw;
+    height: auto;
+    left: 50%; /* 중앙 정렬을 위해 왼쪽으로 이동 */
+    transform: translateX(-50%); /* 중앙으로 조정 */
+    margin-top: 0;
+    top: -4vh; /* bento-box의 margin-top 만큼 위로 이동 */
+}
+
+.bg1 img{
+    width: 37rem;
+    margin-left: 3rem;
+}
+
+.bg2 img{
+    width: 55rem;
+    margin-left: 37rem;
+    margin-top: 0;
+}
+
+.bg3 img {
+    width: 10rem; /* Set size for the new background image */
+    position: absolute;
+    top: 12.4rem; /* Adjust as needed for vertical positioning */
+    left: 12.7rem; /* Adjust as needed for horizontal positioning */
+    z-index: -1; /* Keep it behind other elements */
+    transform: translateX(-50%);
+}
+
+.bento-box {
+    background: linear-gradient(to bottom, #E0FD48, #D6FF00);
+    width: 90vw; /* bento-box 너비 설정 */
+    height: 107vh;
+    position: relative; /* 상대 위치 */
+    left: 50%; /* 중앙 정렬 */
+    transform: translateX(-50%);
+    margin-top: 7vh; /* 상단 여백 */
+    margin-bottom: 12rem;
+    border-radius: 70px;
+    z-index: -1; /* 배경 역할을 위해 z-index 설정 */
+    overflow: hidden;
+}
+
+.home{
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1vw;
+    width:80vw;
+    margin:0 auto;
+}
+
+.home-left{
+    position: relative;
+    z-index: 1;
+    grid-column: span 1;
+    display: flex;
+    justify-content: flex-start; /* 가로 방향 왼쪽 정렬 */
+    flex-direction: column;
+    align-items: flex-start; /* 가로 방향 왼쪽 정렬 유지 */
+    margin-top: 27rem;
+    margin-bottom: auto;
+}
+
+.homeTxt{
+    margin-bottom: 2rem;
+}
+
+.mockAll{
+    grid-column: span 1;
+}
+
+/*.homeTxt{*/
+/*    position: absolute; !* 절대 위치 설정 *!*/
+/*    top: 28%; !* 부모의 50% 위치 *!*/
+/*    left: 20%; !* 부모의 50% 위치 *!*/
+/*    transform: translate(-50%, 0); !* 요소 크기의 50% 만큼 위쪽과 왼쪽으로 이동 *!*/
+/*}*/
+
+.homeKey{
+    align-self: flex-start;
+    width: 30vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1vw;
+}
+
+.hk1{
+    grid-column: span 1;
+    grid-row: span 1;
+    background-color: #000000;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid white;
+    height: 2.5rem;
+    margin:0;
+    padding:0;
+}
+
+.hk2{
+    grid-column: span 1;
+    grid-row: span 1;
+    background-color: #000000;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid white;
+    height: 2.5rem;
+    margin:0;
+    padding:0;
+}
+
+.hk3{
+    grid-column: span 1;
+    grid-row: span 1;
+    background-color: #000000;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid white;
+    height: 2.5rem;
+    margin:0;
+    padding:0;
+}
+
+.hk4{
+    grid-column: span 3;
+    grid-row: span 1;
+    border-radius: 100px;
+    background-color: #000000;
+    border: 1.5px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    margin:0;
+    padding:0;
+}
+
+.circle{
+    width:30px;
+    height: 30px;
+    background-color: #E0FD48;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.circle img{
+    width: 50%;
+}
+
+.mockUp {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100vh;
+    gap:2vw;
+    margin-top: -8vh;
+}
+
+.mock1 {
+    width: 34%;
+}
+
+.mock1 img {
+    width: 100%;
+    margin-top: 10rem;
+}
+
+.mock2 {
+    width: 39%;
+}
+
+.mock2 img {
+    width: 100%;
+}
+
+.star-container {
+    width: 120px; /* 원하는 원의 크기로 설정 */
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 47rem;
+    margin-top: -15rem;
+    background-color: #101010;
+}
+
+.star-container img{
+    width: 70%;
+    animation: rotate 8s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg); /* 시작 각도 */
+    }
+    to {
+        transform: rotate(360deg); /* 360도 회전 */
+    }
+}
+
+/* 비디오 스타일 */
+.video-container video {
+    width: 550%; /* 원 크기에 맞춰 비디오 확대 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+    height: auto; /* 비율 유지 */
+    object-fit: cover; /* 비디오를 컨테이너에 맞추어 잘라냄 */
+}
+
+.scrollToTopBtn {
+    position: fixed;
+    bottom: 4rem;
+    right: 4rem;
+    display: none; /* 처음에는 보이지 않음 */
+    background-color: #1e1e1e;
+    color: #E0FD48;
+    border: none;
+    border-radius: 100px;
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.scrollToTopBtn:hover {
+    background-color: #E0FD48;
+    color: #1e1e1e;
+}

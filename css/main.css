@@ -1,0 +1,456 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css');
+@import url('https://fonts.cdnfonts.com/css/conthrax');
+
+
+/*--BODY / CONTAINER--*/
+
+
+body {
+    font-family: 'pretendard', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #101010;
+    font-size: 16px; /* 1rem = 16px */
+}
+
+.container{
+    width:75%;
+    margin:0 auto;
+    position: relative;
+}
+
+
+
+
+/*--SCROLL BAR--*/
+
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #E0FD48; /* 스크롤바 색상 */
+    border-radius: 10px; /* 스크롤바 둥근 테두리 */
+}
+
+::-webkit-scrollbar-track {
+    background: #1e1e1e;  /*스크롤바 뒷 배경 색상*/
+}
+
+::-webkit-scrollbar:horizontal {
+    width: 0;
+    height: 0;
+}
+
+/*--HEADER--*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7.5vh;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 75%;
+    gap: 20px; /* 요소 간의 간격 추가 */
+}
+
+.logo {
+    /* 로고 스타일 추가 (예: 크기 및 배경색) */
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(105, 105, 105, 0.5); /* 배경 색상 설정 */
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    gap: 1rem; /* 메뉴 항목 간의 간격 추가 */
+}
+
+nav ul li {
+    /* 필요시 추가 스타일 */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #E0FD48;
+    display: block;
+    padding: 0.5rem 1.5rem;
+}
+
+nav ul li a:hover {
+    color: #000000;
+    background-color: #E0FD48;
+    border-radius: 10px;
+}
+
+/*--FOOTER--*/
+
+
+footer{
+    background-color: #E0FD48;
+    color:black;
+    height: 20vw;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 40px;   /* 왼쪽 위 둥근 모서리 */
+    border-top-right-radius: 40px;  /* 오른쪽 위 둥근 모서리 */
+    border-bottom-left-radius: 0;   /* 왼쪽 아래 모서리는 둥글지 않음 */
+    border-bottom-right-radius: 0;
+}
+
+
+.prof:hover {
+    filter: invert(1);
+}
+
+
+.footer1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright {
+    font-size: 0.95rem;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.footerLogo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footerLogo a{
+    text-decoration: none;
+    color:white;
+}
+
+.logoF img{
+    width: 15%;
+}
+
+.profileAll{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.profile1 {
+    display: flex;
+    margin: 0 auto;
+}
+
+.profileAll img{
+    width:70%;
+    margin-bottom: 1rem;
+}
+
+.profile {
+    text-align: center;
+    margin-left: 2rem;
+}
+
+.name{
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.portfolio{
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+
+.portfolio a{
+    text-decoration: none;
+    color:white;
+}
+
+
+/*--FONT SYSTEM--*/
+/*--DESIGN--*/
+
+/*--SLIDER--*/
+
+
+.white{
+    font-family: Pretendard,'sans-serif';
+    font-size: 1.3rem;
+    font-weight: 500;
+    color:white;
+}
+
+.black{
+    font-family: Pretendard,'sans-serif';
+    font-size: 1.3rem;
+    font-weight: 500;
+    color:black;
+}
+
+
+/*--TITLE/SUB TEXT--*/
+
+
+.con1{
+    font-family: Conthrax, 'sans-serif';
+    font-size: 3rem;
+    color: #E0FD48;
+    margin: 0;
+    padding: 0;
+}
+
+.con1-1{
+    font-family: Conthrax, 'sans-serif';
+    font-size: 2.5rem;
+    line-height: 3rem;
+    color:white;
+    margin: 0;
+    padding: 0;
+}
+
+.pre1{
+    font-family: Pretendard, 'sans-serif';
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-top: 3rem;
+    color: #ffffff;
+}
+
+
+/*--LOGO--*/
+
+
+.con2{
+    font-family: Conthrax, 'sans-serif';
+    font-size: 6rem;
+    color: #E0FD48;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+
+/*--DESIGN SYSTEM--*/
+
+.con3{
+    font-family: Conthrax, 'sans-serif';
+    font-size: 3rem;
+    color: #000000;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
+
+.pre2{
+    font-family: Pretendard, 'sans-serif';
+    font-size: 1rem;
+    font-weight: 700;
+    color: #000000;
+    margin-left: 2rem;
+    margin-top: 0;
+    margin-bottom: 1.7rem;
+}
+
+.pre3{
+    font-family: Pretendard, 'sans-serif';
+    font-size: 1rem;
+    color: #000000;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+.con4{
+    font-family: Conthrax, 'sans-serif';
+    font-size: 2.2rem;
+    color: #000000;
+    margin-left: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
+
+.con5{
+    font-family: Conthrax, 'sans-serif';
+    font-size: 2.2rem;
+    color: #ffffff;
+    margin-left: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 0;
+
+}
+
+.pre5{
+    font-family: Pretendard, 'sans-serif';
+    font-size: 1rem;
+    color: #ffffff;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+.pre6{
+    font-family: Pretendard, 'sans-serif';
+    font-size: 1.7rem;
+    font-weight:700;
+    color: #000000;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.pre7{
+    font-family: Pretendard, 'sans-serif';
+    font-size: 1.5rem;
+    color: #000000;
+    margin-left: 2rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.pre7-1{
+    font-family: Pretendard, 'sans-serif';
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: #000000;
+    margin-left: 2rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.pre7-2{
+    font-family: Pretendard, 'sans-serif';
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #000000;
+    margin-left: 2rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.pre7-3{
+    font-family: Pretendard, 'sans-serif';
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #000000;
+    margin-left: 2rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.con6{
+    font-family: Conthrax, 'sans-serif';
+    font-size: 2rem;
+    color: #000000;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.con7{
+    font-family: Conthrax, 'sans-serif';
+    font-size: 2rem;
+    color: #000000;
+    margin-left: 2rem;
+    margin-top: -0.2rem;
+    margin-bottom: 2rem;
+}
+
+
+/*--FOOTER--*/
+
+
+.con8{
+    font-family: Conthrax, 'sans-serif';
+    font-size: 4rem;
+    color: #000000;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.footerLogo a {
+    color:#000000;
+}
+
+.con9{
+    font-family: Conthrax, 'sans-serif';
+    font-size: 1.1rem;
+    color: #E0FD48;
+    margin-left: 4.8rem;
+    margin-bottom:3rem;
+    margin-top: 0;
+}
+
+.pre8{
+    margin-bottom: 0;
+    font-size: 0.95rem;
+    color:#000000;
+}
+
+.mainTxt{
+    font-family: Conthrax, 'sans-serif';
+    font-size: 5.5rem;
+    color: #000000;
+    margin-top: 0;
+    line-height: 6.2rem;
+    margin-bottom: 0;
+}
+
+.hk{
+    font-family: Conthrax, 'sans-serif';
+    font-size: 1rem;
+    color: #ffffff;
+    margin: 0.5rem 0;
+}
+
+.hkC{
+    font-family: Conthrax, 'sans-serif';
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+.top{
+    font-size: 1rem;
+}
+
+.main-sub{
+    font-family: Pretendard, 'sans-serif';
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #000000;
+}
+
+.VisionPre {
+    font-family: Pretendard, 'sans-serif';
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #E0FD48;
+    margin-top: 0;
+    margin-bottom: 3rem;
+    line-height: 3.2rem;
+}
+
+.tabC{
+    font-family: Conthrax, 'sans-serif';
+    font-size: 1.7rem;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+.VisionSub {
+    font-family: Pretendard, 'sans-serif';
+    font-size: 1.2rem;
+    color: #FFFFFF;
+    margin-top: 0;
+    margin-bottom: 3rem;
+    line-height: 3rem;
+}

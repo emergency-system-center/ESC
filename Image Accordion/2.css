@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+    font-family: Montserrat,sans-serif;
+  }
+  
+  body{
+    background-color: #343E48;
+  }
+  
+  h1{
+    text-align: center;
+    color: #FFF;
+  }
+  
+  /* ---- Create Accordion --- */
+  
+  .accordion{ 
+    width: 1080px;
+    height: 800px;
+    display: flex;
+    overflow: hidden;
+    margin: 50px auto;
+  }
+  
+  .tab{
+    position: relative;
+    width: 40%;
+    height: inherit;
+    padding: 20px;
+    background: #000;
+    color: #FFF;
+    cursor: pointer;
+    transition: width .5s ease;
+    border: 1px solid #FFF;
+    border-radius: 30px;
+  }
+  
+  .tab img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all .5s ease;
+    border-radius: 30px;
+  }
+  
+  .caption{
+    position: absolute;
+    z-index: 2;
+    white-space: nowrap;
+    top: 500px;
+    opacity: 0;
+  }
+  
+  .caption h2{
+    margin-bottom: 2px;
+    text-overflow:clip;
+    font-size:24px;
+    text-transform:uppercase;
+  }
+
+  /* --- Hover Effects --- */
+  
+  .tab:hover img{
+    opacity: .6;
+  }
+  
+  .tab:hover{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .tab:hover .caption{
+    transition: all .5s ease;
+    opacity: 1;
+  }
