@@ -1,5 +1,22 @@
 /*PERSONA*/
 
+.persona1 .per {
+    opacity: 0;
+    transform: translateX(-50px); /* 왼쪽에서 시작 */
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.persona1 .per.right {
+    transform: translateX(50px); /* 오른쪽에서 시작 */
+}
+
+/* 애니메이션 활성화 상태 */
+.persona1 .per.visible {
+    opacity: 1;
+    transform: translateX(0); /* 원래 위치로 이동 */
+}
+
+
 .persona{
     margin-bottom: 12rem;
 }
@@ -24,6 +41,9 @@
     border-radius: 15px;
     border: 2px solid #E0FD48;
     background-color: #E0FD48;
+    display: flex;              
+    align-items: center;       
+    justify-content: center;  
 }
 
 .per1-3{
@@ -32,6 +52,9 @@
     border-radius: 15px;
     border: 2px solid #FF3E3E;
     background-color: #FF3E3E;
+    display: flex;              
+    align-items: center;       
+    justify-content: center;  
 }
 
 .per1-4{
@@ -54,7 +77,20 @@
     border-radius: 15px;
     border: 2px solid #0177FF;
     background-color: #0177FF;
+    display: flex;              
+    align-items: center;       
+    justify-content: center;  
 }
+
+.per1-2 img,
+.per1-3 img,
+.per1-6 img {
+    max-width: 100%;          
+    max-height: 100%;        
+    width: 7rem;             
+    object-fit: contain;      
+}
+
 
 .persona2{
     display: grid;
@@ -113,6 +149,9 @@
 .perTxt {
     margin-bottom: 3rem;
 }
+
+
+
 
 /*NAMING*/
 
@@ -402,7 +441,17 @@ li{
     line-height: 1.8rem;
     font-size: 1rem;
     font-weight: 300;
+      /* 추가 시작 */
+      opacity: 0; /* 초기 투명도 0 */
+      transform: translateX(-100%); /* 초기 위치 */
+      transition: opacity 0.5s ease, transform 0.5s ease; /* 부드러운 전환 효과 */
+  }
+  
+  .sv.visible {
+    opacity: 1; /* 보이게 설정 */
+    transform: translateX(0); /* 원래 위치로 이동 */
 }
+/* 추가 끝 */
 
 .service-value2 {
     display: grid;
@@ -453,7 +502,11 @@ li{
     border-radius: 20px;
 }
 
-.aiV{
+
+
+/*AI 사용*/
+
+/* .aiV{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -461,7 +514,6 @@ li{
     margin-bottom: 12rem;
 }
 
-/*AI 사용*/
 
 .ai {
     border: solid 2px #E0FD48;
@@ -483,4 +535,99 @@ li{
     background-color: #E0FD48;
     color: black;
     transform: scale(1.05);
-}
+} */
+
+
+.aiV {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 2vw;
+    margin-bottom: 12rem;
+    opacity: 0; 
+  }
+
+  .ai:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+  }
+
+
+  
+  .ai {
+    border: solid 2px #1e1e1e;
+    grid-column: span 1;
+    grid-row: span 1;
+    background-color: #1e1e1e;
+    border-radius: 20px;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: transform 0.3s ease;
+  }
+  
+  .aiV.visible {
+    animation: fadeIn 1s ease forwards;
+  }
+  
+  .aiV.visible .ai:nth-child(1) {
+    animation: showBorder 0.3s ease forwards;
+    animation-delay: 0.5s;
+  }
+  
+  .aiV.visible .ai:nth-child(2) {
+    animation: showBorder 0.3s ease forwards;
+    animation-delay: 1s;
+  }
+  
+  .aiV.visible .ai:nth-child(3) {
+    animation: showBorder 0.3s ease forwards;
+    animation-delay: 1.5s;
+  }
+  
+  .aiV.visible .ai:nth-child(4) {
+    animation: showBorderAndColor 0.3s ease forwards;
+    animation-delay: 2s;
+  }
+  
+  /* 요소가 화면에서 벗어날 때의 스타일 */
+  .aiV:not(.visible) {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
+  .aiV:not(.visible) .ai {
+    border-width: 0;
+    background-color: #1e1e1e;
+    color: white;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes showBorder {
+    to {
+      border-width: 2px;
+      border-color: #E0FD48;
+    }
+  }
+  
+  @keyframes showBorderAndColor {
+    to {
+      border-width: 2px;
+      background-color: #E0FD48;
+      color: black;
+    }
+  }

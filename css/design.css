@@ -194,6 +194,40 @@
     margin-bottom: 4rem;
 }
 
+
+
+.font, .mainColor, .subColor1, .subColor2, .subColor3 {
+    opacity: 0; /* 기본적으로 보이지 않게 설정 */
+    transition: opacity 0.4s ease-out, transform 0.4s ease-out; /* 애니메이션 속도 */
+}
+
+/* 각 요소에 대해 다른 방향에서 나타나도록 설정 */
+.font {
+    transform: translateX(-100%); /* 왼쪽에서 들어오는 효과 */
+}
+
+.mainColor {
+    transform: translateY(-100%); /* 위에서 들어오는 효과 */
+}
+
+.subColor1 {
+    transform: translateX(100%); /* 오른쪽에서 들어오는 효과 */
+}
+
+.subColor2 {
+    transform: translateY(100%); /* 아래에서 들어오는 효과 */
+}
+
+.subColor3 {
+    transform: translateX(110%); /* 왼쪽에서 들어오는 효과 */
+}
+
+/* 애니메이션 활성화 상태 */
+.font.visible, .mainColor.visible, .subColor1.visible, .subColor2.visible, .subColor3.visible {
+    opacity: 1; /* 보이게 설정 */
+    transform: translateY(0) translateX(0); /* 원래 위치로 이동 */
+}
+
 /*ICON SLIDER*/
 
 .icon{
