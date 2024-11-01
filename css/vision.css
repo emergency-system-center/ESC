@@ -1,3 +1,5 @@
+/*PERSONA*/
+
 .persona{
     margin-bottom: 12rem;
 }
@@ -112,6 +114,8 @@
     margin-bottom: 3rem;
 }
 
+/*NAMING*/
+
 
 @keyframes roundandround {
     to {
@@ -133,18 +137,6 @@
     perspective: 1000px;
 }
 
-/* 나머지 CSS는 기존과 동일하게 유지 */
-
-
-/*.scene.animate .ball {*/
-/*    animation: roundandround 7.5s 1.3s infinite linear;*/
-/*}*/
-
-/*.scene.animate .ring {*/
-/*    animation: show 0.75s forwards ease-in-out;*/
-/*}*/
-
-
 .wrapper {
     width:100%;
     height:100%;
@@ -165,8 +157,6 @@
     /* 기존 스타일 유지 */
     opacity: 0;
 }
-
-
 
 li{
     list-style: none;
@@ -300,97 +290,7 @@ li{
     animation-delay: 0s;
 }
 
-/*.problem-solve {*/
-/*    width: 100%;*/
-/*    height: 50vh;*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    align-items: center;*/
-/*    justify-content: center;*/
-/*    margin: 0 auto;*/
-/*    padding: 4rem 0;*/
-/*}*/
-
-/*.accordion {*/
-/*    width: 100%;*/
-/*    height: 50vh;*/
-/*    display: flex;*/
-/*    gap: 20px; !* 탭 사이 간격 추가 *!*/
-/*    padding: 20px; !* 전체 아코디언에 패딩 추가 *!*/
-/*    margin-bottom: 12rem;*/
-/*}*/
-
-/*.tab {*/
-/*    position: relative;*/
-/*    width: 40%;*/
-/*    height: inherit;*/
-/*    padding: 3rem;*/
-/*    background: #000;*/
-/*    color: #FFF;*/
-/*    cursor: pointer;*/
-/*    transition: all .5s ease;*/
-/*    border: 2px solid #E0FD48;*/
-/*    border-radius: 30px;*/
-/*    overflow: hidden;*/
-/*}*/
-
-/*.tab img {*/
-/*    position: absolute;*/
-/*    top: 0;*/
-/*    left: 0;*/
-/*    width: 100%;*/
-/*    height: 100%;*/
-/*    object-fit: cover;*/
-/*    transition: all .5s ease;*/
-/*    border-radius: 30px;*/
-/*}*/
-
-/*.default-text {*/
-/*    position: absolute;*/
-/*    z-index: 2;*/
-/*    bottom: 5rem;*/
-
-/*    transition: opacity .5s ease;*/
-/*}*/
-
-/*.caption {*/
-/*    position: absolute;*/
-/*    z-index: 2;*/
-/*    white-space: nowrap;*/
-/*    bottom: 5rem;*/
-/*    opacity: 0;*/
-/*    transition: opacity 1.5s ease;*/
-/*}*/
-
-/*.caption h2 {*/
-/*    margin-bottom: 2px;*/
-/*    text-overflow: clip;*/
-/*    font-size: 24px;*/
-/*    text-transform: uppercase;*/
-/*    overflow: hidden;*/
-/*}*/
-
-/*!* --- Hover Effects --- *!*/
-
-/*.tab:hover img {*/
-/*    opacity: .6;*/
-/*}*/
-
-/*.tab:hover {*/
-/*    width: 100%;*/
-/*}*/
-
-/*.tab:hover .caption {*/
-/*    opacity: 1;*/
-/*}*/
-
-/*.tab:hover .default-text {*/
-/*    opacity: 0;*/
-/*}*/
-
-/*.problemTxt {*/
-/*    text-align: center;*/
-/*}*/
+/*아코디언 슬라이더*/
 
 .problem-solve {
     width: 100%;
@@ -418,11 +318,11 @@ li{
     color: #FFF;
     cursor: pointer;
     transition: all 0.5s ease;
-    border: 2px solid #E0FD48;
     border-radius: 30px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    /*aspect-ratio: 1 / 2;*/
 
 }
 
@@ -439,7 +339,7 @@ li{
 .default-text {
     background-color: #E0FD48;
     border-radius: 50px;
-    width: 5rem;
+    width: 4rem;
     aspect-ratio: 1 / 1;
     z-index: 2;
     transition: opacity 0.5s ease;
@@ -454,19 +354,17 @@ li{
     z-index: 2;
     bottom: 2rem;
     left: 2rem;
+    padding-right: 2rem;
     opacity: 0;
     transition: opacity 0.1s ease;
+    font-size: 1.05rem;
+    line-height: 1.7rem;
 }
-
-/*.caption {*/
-/*    margin-bottom: 0.5rem;*/
-/*    font-size: 1.5rem;*/
-/*    text-transform: uppercase;*/
-/*}*/
 
 /* Hover Effects */
 .tab:hover {
     flex: 3;
+    border: 3px solid #E0FD48;
 }
 
 .tab:hover img {
@@ -481,11 +379,14 @@ li{
     opacity: 0;
 }
 
+/*그래서 우리는 통합 서비스를 개발함*/
+
 .service-value1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2vw;
     margin-bottom: 6rem;
+    width: 100%;
 }
 
 .sv {
@@ -493,7 +394,14 @@ li{
     grid-row: span 1;
     background-color: #1e1e1e;
     border-radius: 20px;
-    aspect-ratio: 1 / 1.5;
+    /*aspect-ratio: 1 / 1.5;*/
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    line-height: 1.8rem;
+    font-size: 1rem;
+    font-weight: 300;
 }
 
 .service-value2 {
@@ -501,6 +409,24 @@ li{
     grid-template-columns: repeat(3, 1fr);
     gap: 2vw;
     margin-bottom: 12rem;
+}
+
+.svImgTxt{
+    margin-bottom: 5rem;
+}
+
+.sv img{
+    width: 4rem;
+    height: 4rem;
+    margin-bottom: 4rem;
+}
+
+.sv img:nth-child(1){
+    padding: 0;
+}
+
+.sv p{
+    margin: 0;
 }
 
 
@@ -535,10 +461,26 @@ li{
     margin-bottom: 12rem;
 }
 
+/*AI 사용*/
+
 .ai {
+    border: solid 2px #E0FD48;
     grid-column: span 1;
     grid-row: span 1;
     background-color: #1e1e1e;
     border-radius: 20px;
     height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.ai:hover{
+    background-color: #E0FD48;
+    color: black;
+    transform: scale(1.05);
 }

@@ -10,6 +10,18 @@
 
 /*}*/
 
+
+#home {
+    transform-origin: top center;
+}
+
+
+
+
+
+
+
+
 .bg-img {
     position: absolute;
     /*z-index: -2;*/
@@ -181,7 +193,7 @@
 }
 
 .mock1 {
-    width: 34%;
+    width: 15rem;  /* 34% -> 24rem */
 }
 
 .mock1 img {
@@ -190,7 +202,7 @@
 }
 
 .mock2 {
-    width: 39%;
+    width: 17.8rem;  /* 39% -> 28rem */
 }
 
 .mock2 img {
@@ -255,3 +267,9 @@
     background-color: #E0FD48;
     color: #1e1e1e;
 }
+
+
+
+
+
+

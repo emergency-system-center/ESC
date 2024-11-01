@@ -11,10 +11,11 @@ body {
     padding: 0;
     background-color: #101010;
     font-size: 16px; /* 1rem = 16px */
+    overflow-x: hidden;
 }
 
 .container{
-    width:75%;
+    width:73%;
     margin:0 auto;
     position: relative;
 }
@@ -57,7 +58,7 @@ header {
     left: 0;
     right: 0;
     margin: 0 auto;
-    width: 75%;
+    width: 73%;
     gap: 20px; /* 요소 간의 간격 추가 */
 }
 
@@ -224,8 +225,8 @@ footer{
 
 .pre1{
     font-family: Pretendard, 'sans-serif';
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: 1.2rem;
+    line-height: 2rem;
     margin-top: 3rem;
     color: #ffffff;
 }
@@ -453,4 +454,32 @@ footer{
     margin-top: 0;
     margin-bottom: 3rem;
     line-height: 3rem;
+}
+
+.bold-big {
+    font-family: Pretendard, 'sans-serif';
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-top: 0;
+    margin-bottom: 3rem;
+    line-height: 3rem;
+}
+
+.bold-big1 {
+    font-family: Pretendard, 'sans-serif';
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-top: 0;
+    margin-bottom: 3rem;
+    line-height: 2.5rem;
+}
+
+.bgTxt {
+    font-family: Pretendard, 'sans-serif';
+    font-size: 1.05rem;
+    background-color: #E0FD48;
+    color: black;
+    font-weight: 600;
 }

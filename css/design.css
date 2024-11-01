@@ -138,11 +138,6 @@
     margin-bottom: 3rem;
 }
 
-/*.systemGrid-container{*/
-/*    width: 75%;*/
-/*    margin: 0 auto;*/
-/*}*/
-
 .systemGrid{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -198,6 +193,8 @@
 .pretendard{
     margin-bottom: 4rem;
 }
+
+/*ICON SLIDER*/
 
 .icon{
     padding-bottom: 24rem;
