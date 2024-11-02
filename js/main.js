@@ -277,7 +277,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // 옵저버 설정
     const observerOptions = {
-        threshold: 0.5 // 요소가 20% 정도 화면에 보일 때 트리거
+        threshold: 0.3  // 요소가 20% 정도 화면에 보일 때 트리거
     };
 
     const observer = new IntersectionObserver((entries) => {

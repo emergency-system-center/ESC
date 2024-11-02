@@ -2,6 +2,7 @@
     display: flex;
     border-radius: 20px;
     width: 100%; /* 전체 너비 설정 */
+    margin-bottom: 12rem;
 }
 
 .paramedic1, .paramedic2 {
@@ -52,6 +53,9 @@
     background-color: #1e1e1e;
     border-radius: 20px;
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .paramedic1-5{
@@ -92,12 +96,322 @@
 
 .circleP{
     background-color: #E0FD48;
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     border-radius: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
 
+}
+
+.par4-1, .par4-2{
+    margin-bottom: 2rem;
+}
+
+.paramedic0-1Txt{
+    margin-bottom: 3rem;
+}
+
+
+.parCheck{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2vw;
+    border-radius: 20px;
+}
+
+.parCheck1{
+    grid-column: span 1;
+    grid-row: span 1;
+    background-color: #101010;
+    border: solid 2px #E0FD48;
+    border-radius: 20px;
+    aspect-ratio: 1 / 1;
+
+}
+
+.parCheck2{
+    grid-column: span 1;
+    grid-row: span 1;
+    background-color: #101010;
+    border: solid 2px #E0FD48;
+    border-radius: 20px;
+
+}
+
+.parCheck3{
+    grid-column: span 1;
+    grid-row: span 1;
+    background-color: #101010;
+    border: solid 2px #E0FD48;
+    border-radius: 20px;
+}
+
+.parCheck4{
+    grid-column: span 1;
+    grid-row: span 1;
+    border-radius: 20px;
+}
+
+.parCheck5{
+    grid-column: span 1;
+    grid-row: span 1;
+    border-radius: 20px;
+    aspect-ratio: 1 / 1;
+}
+
+.parCheck6{
+    grid-column: span 1;
+    grid-row: span 1;
+    background-color: #101010;
+    border: solid 2px #E0FD48;
+    border-radius: 20px;
+}
+
+.parCheck7{
+    grid-column: span 1;
+    grid-row: span 1;
+    background-color: #101010;
+    border: solid 2px #E0FD48;
+    border-radius: 20px;
+}
+
+.parCheck8{
+    grid-column: span 1;
+    grid-row: span 1;
+    background-color: #101010;
+    border: solid 2px #E0FD48;
+    border-radius: 20px;
+}
+
+.parCheck9{
+    grid-column: span 1;
+    grid-row: span 1;
+    border-radius: 20px;
+    aspect-ratio: 1 / 1;
+}
+
+.parCheck10{
+    grid-column: span 1;
+    grid-row: span 1;
+    border-radius: 20px;
+}
+
+.parCheck11{
+    grid-column: span 1;
+    grid-row: span 1;
+    background-color: #101010;
+    border: solid 2px #E0FD48;
+    border-radius: 20px;
+}
+
+.parCheck12{
+    grid-column: span 1;
+    grid-row: span 1;
+    background-color: #101010;
+    border: solid 2px #E0FD48;
+    border-radius: 20px;
+}
+
+.paramedic0-3{
+    margin-bottom: 12rem;
+}
+
+.hospital{
+    display: flex;
+    border-radius: 20px;
+    width: 100%; /* 전체 너비 설정 */
+    margin-bottom: 12rem;
+}
+
+.hospital1, .hospital2 {
+    flex-basis: 50%; /* 각 컨테이너가 50%의 너비 차지 */
+    display: grid;
+}
+
+.hospital1 {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    gap: 2vw;
+    border-radius: 20px;
+    margin-right: 1vw;
+}
+
+.hospital2 {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 2vw;
+    border-radius: 20px;
+    margin-left: 1vw;
+}
+
+.hospital1-1{
+    grid-column: span 1;
+    grid-row: span 1;
+    border-radius: 20px;
+}
+
+.hospital1-2{
+    grid-column: span 1;
+    grid-row: span 3;
+    background-color: #1e1e1e;
+    border-radius: 20px;
+}
+
+.hospital1-3{
+    grid-column: span 1;
+    grid-row: span 3;
+    background-color: #1e1e1e;
+    border-radius: 20px;
+}
+
+.hospital2-1{
+    grid-column: span 1;
+    grid-row: span 4;
+    background-color: #1e1e1e;
+    border-radius: 20px;
+}
+
+.hospital2-2{
+    grid-column: span 1;
+    grid-row: span 2;
+    background-color: #ff3e3e;
+    border-radius: 20px;
+}
+
+.hospital3{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2vw;
+    border-radius: 20px;
+    margin-bottom: 12rem;
+}
+
+.hos3{
+    grid-column: span 1;
+    grid-row: span 1;
+    background-color: #1e1e1e;
+    border: solid 2px #ff3e3e;
+    border-radius: 20px;
+    aspect-ratio: 1 / 1;
+}
+
+.hos3Txt{
+    margin-bottom: 3rem;
+}
+
+.hospital4{
+    margin-bottom: 12rem;
+}
+
+.hospital4 .service-main{
+    margin-bottom: 2rem;
+}
+
+.citizen{
+    display: flex;
+    border-radius: 20px;
+    width: 100%; /* 전체 너비 설정 */
+    height: auto;
+    margin-bottom: 12rem;
+    align-items: stretch;
+
+}
+
+.citizen1 {
+    flex-basis: 60%; /* 각 컨테이너가 50%의 너비 차지 */
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+    gap: 2vw;
+    border-radius: 20px;
+    margin-right: 1vw;
+}
+
+.citizen1-1{
+    grid-column: span 1;
+    grid-row: span 3;
+    border-radius: 20px;
+}
+
+.citizen1-2{
+    grid-column: span 1;
+    grid-row: span 3;
+    border-radius: 20px;
+    /* padding: 2rem 0; */
+}
+
+.citizen1-2 .service-main{
+    padding-bottom: 3rem; 
+}
+
+.citizen1-3{
+    grid-column: span 1;
+    grid-row: span 3;
+    background-color: #1e1e1e;
+    border-radius: 20px;
+}
+.citizen1-4{
+    grid-column: span 1;
+    grid-row: span 6;
+    background-color: #1e1e1e;
+    border-radius: 20px;
+}
+
+.citizen2 {
+    flex-basis: 40%; /* 각 컨테이너가 50%의 너비 차지 */
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 2vw;
+    border-radius: 20px;
+    margin-left: 1vw;
+}
+
+.citizen2-1{
+    grid-column: span 1;
+    grid-row: span 1;
+    background-color: #1e1e1e;
+    border-radius: 20px;
+    height: 100%;
+}
+
+.citizen3{
+    margin-bottom: 12rem;
+}
+
+.citizen4{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 2vw;
+    border-radius: 20px;
+    margin-bottom: 12rem;
+}
+
+.citizen4-1{
+    grid-column: span 1;
+    grid-row: span 3;
+    background-color: #1e1e1e;
+    border-radius: 20px;
+}
+.citizen4-2{
+    grid-column: span 1;
+    grid-row: span 4;
+    background-color: #1e1e1e;
+    border-radius: 20px;
+}
+.citizen4-3{
+    grid-column: span 1;
+    grid-row: span 1;
+    background-color: #0177FF;
+    aspect-ratio: 3/1;
+    border-radius: 20px;
+}
+
+.citizen4Txt .service-main{
+    margin-bottom: 3rem;
 }

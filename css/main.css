@@ -572,3 +572,13 @@ footer{
     line-height: 3rem;
     font-weight: 600;
 }
+
+.service-sub{
+    font-family: Pretendard, 'sans-serif';
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+    color: white;
+    line-height: 2rem;
+    font-weight: 300;
+}
