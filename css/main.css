@@ -454,7 +454,7 @@ footer{
 
 .bold-big {
     font-family: Pretendard, 'sans-serif';
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 600;
     color: #FFFFFF;
     margin-top: 0;
@@ -587,4 +587,12 @@ footer{
     color: white;
     line-height: 2rem;
     font-weight: 600;
+}
+
+.number{
+    font-family: Conthrax, 'sans-serif';
+    font-size: 2rem;
+    color: #000000;
+    margin:0;
+    padding: 0;
 }

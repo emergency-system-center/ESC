@@ -32,7 +32,7 @@
     grid-column: span 2;
     grid-row: span 1;
     border-radius: 15px;
-    border: 2px solid #E0FD48;
+    border: 3px solid #E0FD48;
 }
 
 .per1-2{
@@ -61,14 +61,14 @@
     grid-column: span 2;
     grid-row: span 1;
     border-radius: 15px;
-    border: 2px solid #FF3E3E;
+    border: 3px solid #FF3E3E;
 }
 
 .per1-5{
     grid-column: span 2;
     grid-row: span 1;
     border-radius: 15px;
-    border: 2px solid #0177FF;
+    border: 3px solid #0177FF;
 }
 
 .per1-6{
@@ -90,6 +90,12 @@
     width: 7rem;             
     object-fit: contain;      
 }
+
+
+
+
+
+
 
 
 .persona2{
@@ -408,7 +414,7 @@ li{
 }
 
 .tab:hover img {
-    opacity: 0.3;
+    opacity: 0.4;
 }
 
 .tab:hover .caption {
@@ -530,7 +536,7 @@ li{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* 검정색 반투명 */
+    background-color: rgba(0, 0, 0, 0.3); /* 검정색 반투명 */
     backdrop-filter: blur(2px); 블러 효과
     z-index: 1;
 }
@@ -694,3 +700,74 @@ li{
     padding: 0 3rem;
   }
 
+  .vision1Txt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.kw-container {
+    display: flex;
+    gap: 1rem; /* 각 키워드 간의 간격 */
+    justify-content: flex-end; /* 오른쪽 정렬 */
+    /* align-items: center; */
+}
+
+.vision1kw {
+    color: #E0FD48; /* 배경색 예시 */
+    padding: 0.5rem;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: solid 1px #E0FD48;
+    padding: 0.5rem 1.3rem;
+    margin-bottom: 3rem;
+}
+
+
+
+
+.visionGrid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2vw;
+    margin-bottom: 12rem;
+}
+
+.vg1{
+    grid-column: span 1;
+    grid-row: span 1;
+    border-radius: 20px;
+    background-color: #1e1e1e;
+    padding: 2rem;
+}
+
+.vg2{
+    grid-column: span 1;
+    grid-row: span 1;
+    border-radius: 20px;
+    background-color: #1e1e1e;
+    padding: 2rem;
+}
+
+.circleV{
+    width: 70px;
+    height: 70px;
+    background-color: #E0FD48;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circleC{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 5rem;
+}
+
+.line{
+    border: solid 0.95px #FFF;
+    margin: 1.5rem 0;
+}
