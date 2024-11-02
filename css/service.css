@@ -12,7 +12,7 @@
 
 .paramedic1 {
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(14, 1fr);
+    grid-template-rows: repeat(13, 1fr);
     gap: 2vw;
     border-radius: 20px;
     margin-right: 1vw;
@@ -34,9 +34,17 @@
 
 .paramedic1-2{
     grid-column: span 1;
-    grid-row: span 5;
+    grid-row: span 4;
     background-color: #E0FD48;
     border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.paramedic1-2 img{
+    width: 70%;
 }
 
 .paramedic1-3{
@@ -44,7 +52,16 @@
     grid-row: span 1;
     background-color: #101010;
     border: solid 2px #E0FD48;
-    border-radius: 20px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.paramedic1-3 img{
+    width: 100%;
+    margin-top: 0.5rem;
 }
 
 .paramedic1-4{
@@ -61,9 +78,18 @@
 .paramedic1-5{
     grid-column: span 1;
     grid-row: span 4;
-    background-color: #101010;
+    background-color: black;
     border: solid 2px #E0FD48;
     border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.paramedic1-5 video{
+    width: 80%;
 }
 
 .paramedic2-1{
@@ -71,6 +97,14 @@
     grid-row: span 2;
     background-color: #1e1e1e;
     border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.paramedic2-1 img{
+    width: 90%;
 }
 
 .paramedic2-2{
@@ -85,6 +119,7 @@
     grid-row: span 4;
     background-color: #1e1e1e;
     border-radius: 20px;
+    padding: 2rem;
 }
 
 .paramedic2-4{
@@ -123,31 +158,43 @@
     border-radius: 20px;
 }
 
+.parCheck img{
+    width: 100%;
+}
+
 .parCheck1{
     grid-column: span 1;
     grid-row: span 1;
-    background-color: #101010;
+    background-color: #1e1e1e;
     border: solid 2px #E0FD48;
     border-radius: 20px;
-    aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
 .parCheck2{
     grid-column: span 1;
     grid-row: span 1;
-    background-color: #101010;
+    background-color: #1e1e1e;
     border: solid 2px #E0FD48;
     border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
 .parCheck3{
     grid-column: span 1;
     grid-row: span 1;
-    background-color: #101010;
+    background-color: #1e1e1e;
     border: solid 2px #E0FD48;
     border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .parCheck4{
@@ -160,38 +207,45 @@
     grid-column: span 1;
     grid-row: span 1;
     border-radius: 20px;
-    aspect-ratio: 1 / 1;
 }
 
 .parCheck6{
     grid-column: span 1;
     grid-row: span 1;
-    background-color: #101010;
+    background-color: #1e1e1e;
     border: solid 2px #E0FD48;
     border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .parCheck7{
     grid-column: span 1;
     grid-row: span 1;
-    background-color: #101010;
+    background-color: #1e1e1e;
     border: solid 2px #E0FD48;
     border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .parCheck8{
     grid-column: span 1;
     grid-row: span 1;
-    background-color: #101010;
+    background-color: #1e1e1e;
     border: solid 2px #E0FD48;
     border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .parCheck9{
     grid-column: span 1;
     grid-row: span 1;
     border-radius: 20px;
-    aspect-ratio: 1 / 1;
 }
 
 .parCheck10{
@@ -203,17 +257,23 @@
 .parCheck11{
     grid-column: span 1;
     grid-row: span 1;
-    background-color: #101010;
+    background-color: #1e1e1e;
     border: solid 2px #E0FD48;
     border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .parCheck12{
     grid-column: span 1;
     grid-row: span 1;
-    background-color: #101010;
+    background-color: #1e1e1e;
     border: solid 2px #E0FD48;
     border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .paramedic0-3{
@@ -259,6 +319,18 @@
     grid-row: span 3;
     background-color: #1e1e1e;
     border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.hospital1-2 img{
+    width: 100%;
+}
+
+.hospital1-3 img{
+    width: 100%;
 }
 
 .hospital1-3{
@@ -266,6 +338,10 @@
     grid-row: span 3;
     background-color: #1e1e1e;
     border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
 }
 
 .hospital2-1{
@@ -273,6 +349,15 @@
     grid-row: span 4;
     background-color: #1e1e1e;
     border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    
+}
+
+.hospital2-1 img{
+    width: 80%;
 }
 
 .hospital2-2{
@@ -293,10 +378,14 @@
 .hos3{
     grid-column: span 1;
     grid-row: span 1;
-    background-color: #1e1e1e;
-    border: solid 2px #ff3e3e;
     border-radius: 20px;
-    aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hos3 img{
+    width:130%;
 }
 
 .hos3Txt{
