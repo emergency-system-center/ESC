@@ -476,10 +476,99 @@ footer{
     line-height: 2.5rem;
 }
 
+.bold-big2 {
+    font-family: Pretendard, 'sans-serif';
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: black;
+    margin-top: 0;
+    margin-bottom: 3rem;
+    line-height: 2.5rem;
+}
+
 .bgTxt {
     font-family: Pretendard, 'sans-serif';
     font-size: 1.05rem;
     background-color: #E0FD48;
     color: black;
+    font-weight: 600;
+}
+
+.perC{
+    font-family: Conthrax, 'sans-serif';
+    font-size: 1.7rem;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 3rem;
+}
+
+.perP{
+    font-family: Pretendard, 'sans-serif';
+    font-size: 1.05rem;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+    line-height: 2rem;
+}
+
+.perBold{
+    font-family: Pretendard, 'sans-serif';
+    font-size: 1.2rem;
+    /* color: #ffffff; */
+    margin: 0;
+    padding: 0;
+    background-color: #E0FD48;
+    color: black;
+    font-weight: 600;
+    line-height: 2rem;
+}
+
+.perBold2{
+    font-family: Pretendard, 'sans-serif';
+    font-size: 1.2rem;
+    /* color: #ffffff; */
+    margin: 0;
+    padding: 0;
+    background-color: #FF3e3e;
+    color: black;
+    font-weight: 600;
+    line-height: 2rem;
+}
+
+.perBold3{
+    font-family: Pretendard, 'sans-serif';
+    font-size: 1.2rem;
+    /* color: #ffffff; */
+    margin: 0;
+    padding: 0;
+    background-color: #0177ff;
+    color: black;
+    font-weight: 600;
+    line-height: 2rem;
+}
+
+.sv2{
+    font-family: Pretendard, 'sans-serif';
+    font-size: 1rem;
+    color: white;
+    line-height: 1.8rem;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.sv2-3T{
+    color: black;
+}
+
+.service-main{
+    font-family: Pretendard, 'sans-serif';
+    font-size: 2rem;
+    /* color: #ffffff; */
+    margin: 0;
+    padding: 0;
+    color: white;
+    line-height: 3rem;
     font-weight: 600;
 }

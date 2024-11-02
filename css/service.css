@@ -1,0 +1,103 @@
+.paramedic0 {
+    display: flex;
+    border-radius: 20px;
+    width: 100%; /* 전체 너비 설정 */
+}
+
+.paramedic1, .paramedic2 {
+    flex-basis: 50%; /* 각 컨테이너가 50%의 너비 차지 */
+    display: grid;
+}
+
+.paramedic1 {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(14, 1fr);
+    gap: 2vw;
+    border-radius: 20px;
+    margin-right: 1vw;
+}
+
+.paramedic2 {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    gap: 2vw;
+    border-radius: 20px;
+    margin-left: 1vw;
+}
+
+.paramedic1-1{
+    grid-column: span 1;
+    grid-row: span 1;
+    border-radius: 20px;
+}
+
+.paramedic1-2{
+    grid-column: span 1;
+    grid-row: span 5;
+    background-color: #E0FD48;
+    border-radius: 20px;
+}
+
+.paramedic1-3{
+    grid-column: span 1;
+    grid-row: span 1;
+    background-color: #101010;
+    border: solid 2px #E0FD48;
+    border-radius: 20px;
+}
+
+.paramedic1-4{
+    grid-column: span 1;
+    grid-row: span 3;
+    background-color: #1e1e1e;
+    border-radius: 20px;
+    padding: 2rem;
+}
+
+.paramedic1-5{
+    grid-column: span 1;
+    grid-row: span 4;
+    background-color: #101010;
+    border: solid 2px #E0FD48;
+    border-radius: 20px;
+}
+
+.paramedic2-1{
+    grid-column: span 1;
+    grid-row: span 2;
+    background-color: #1e1e1e;
+    border-radius: 20px;
+}
+
+.paramedic2-2{
+    grid-column: span 1;
+    grid-row: span 2;
+    background-color: #1e1e1e;
+    border-radius: 20px;
+}
+
+.paramedic2-3{
+    grid-column: span 1;
+    grid-row: span 4;
+    background-color: #1e1e1e;
+    border-radius: 20px;
+}
+
+.paramedic2-4{
+    grid-column: span 1;
+    grid-row: span 1;
+    border-radius: 20px;
+    background-color: #E0FD48;
+}
+
+.circleP{
+    background-color: #E0FD48;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+
+}

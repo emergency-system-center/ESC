@@ -79,15 +79,12 @@
 /*--LOGO--*/
 
 
-.logo{
-    margin-bottom: 12rem;
-}
-
 .logoImg{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2vw;
+    gap: 0vw;
     padding: 2vw;
+    padding-top:0;
     background-color: #1e1e1e;
     border-radius: 20px;
 }
@@ -104,6 +101,7 @@
     border-radius: 15px;
     justify-content: center;
     align-items: center;
+    margin-right: 2rem;
 }
 
 .imgL{
@@ -114,6 +112,8 @@
     border-radius: 15px;
     justify-content: center;
     align-items: center;
+    padding: 2vw;
+    padding-top:0;
 }
 
 .box{
@@ -132,6 +132,8 @@
 
 .designSystem{
     margin-bottom: 12rem;
+    background-color: #1e1e1e;
+    border-radius: 20px;
 }
 
 .systemTxt{
@@ -144,8 +146,7 @@
     grid-template-rows: repeat(3, 1fr);
     gap: 2vw;
     padding: 2vw;
-    background-color: #1e1e1e;
-    border-radius: 20px;
+
 }
 
 .font{
