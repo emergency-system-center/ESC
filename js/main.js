@@ -583,9 +583,9 @@ let lastScrollTop = 0; // 사용자가 마지막으로 스크롤한 위치를 �
                 if (index === 0 || index === 1 || index === 2 || index === 3) {
                     delay = 0.2;
                 } else if (index === 4 || index === 5 || index === 6 || index === 7) {
-                    delay = 0.8;
+                    delay = 0.5;
                 } else if (index === 8 || index === 9 || index === 10 || index === 11) {
-                    delay = 1.15;
+                    delay = 0.9;
                 }
     
                 el.style.transitionDelay = `${delay}s`;
@@ -622,3 +622,40 @@ let lastScrollTop = 0; // 사용자가 마지막으로 스크롤한 위치를 �
         }
     });
     
+
+
+    //소스 버튼
+
+    const toggleButton = document.getElementById('source');
+        const content = document.getElementById('source-url');
+
+        toggleButton.addEventListener('click', () => {
+            if (content.style.display === 'none' || content.style.display === '') {
+                content.style.display = 'block'; // 내용 보이기
+                toggleButton.textContent = '> SOURCE'; // 버튼 텍스트 변경
+            } else {
+                content.style.display = 'none'; // 내용 숨기기
+                toggleButton.textContent = '> SOURCE'; // 버튼 텍스트 변경
+            }
+        });
+
+
+            //div scroll
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const sections = document.querySelectorAll('.divScroll');
+
+        const revealSection = () => {
+            const viewportHeight = window.innerHeight;
+            sections.forEach(section => {
+                const sectionTop = section.getBoundingClientRect().top;
+                if (sectionTop < viewportHeight - 150) { // 섹션이 뷰포트의 150px 위에 도달하면
+                    section.classList.add('show');
+                } else {
+                    section.classList.remove('show'); // 스크롤을 올릴 때 다시 숨김
+                }
+            });
+        };
+
+        window.addEventListener('scroll', revealSection);
+    });

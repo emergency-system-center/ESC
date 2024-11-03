@@ -60,7 +60,7 @@
     position: relative; /* 상대 위치 */
     left: 50%; /* 중앙 정렬 */
     transform: translateX(-50%);
-    margin-top: 7vh; /* 상단 여백 */
+    margin-top: 7.5vh; /* 상단 여백 */
     margin-bottom: 12rem;
     border-radius: 70px;
     z-index: -1; /* 배경 역할을 위해 z-index 설정 */

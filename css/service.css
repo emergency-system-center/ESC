@@ -568,14 +568,31 @@
     grid-column: span 1;
     grid-row: span 6;
     border-radius: 20px;
-    /* padding: 2rem 0; */
+    padding: 2rem 0;
     display: flex;
+    position: relative;
+    overflow: visible;
     align-items: flex-end;
-    background-image: url('../img/cityBg.svg');
     background-position: left; /* 중앙 정렬 */
     background-size: 80%; /* 이미지가 요소 크기에 맞게 조정 */
     background-repeat: no-repeat; /* 이미지 반복 방지 */
 }
+
+.citizen1-2::before {
+    content: '';
+    position: absolute;
+    top: -100%; /* 원하는 만큼 확장 */
+    left: -90%;
+    right: 0%;
+    bottom: -135%;
+    background-image: url('../img/cityBg.svg');
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: 60%;
+    z-index: -1; /* div 뒤에 배치 */
+    border-radius: 20px; /* 동일한 테두리 반경 적용 */
+}
+
 
 /* .citizen1-2 .service-main{
     padding-bottom: 3rem; 

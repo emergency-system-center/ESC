@@ -385,7 +385,7 @@
     position: absolute;
     width: 1px; 
     background-color: rgba(0, 0, 0, 0.5);
-    animation: diagonalAnimation 5s linear forwards;
+    animation: diagonalAnimation 3s linear forwards;
     opacity: 0;
     
 }
@@ -411,7 +411,7 @@ height: 500px;
     border-radius: 50%; 
     border: 1px solid; 
     opacity: 0; 
-    animation: fadeIn 5s forwards; 
+    animation: fadeIn 3s forwards; 
     transform: none !important;
     transition: none !important;
 }
