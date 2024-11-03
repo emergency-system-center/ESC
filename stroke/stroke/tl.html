@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Line Grid</title>
+    <style>
+        .path {
+            stroke-dasharray: 500;
+            stroke-dashoffset: 500;
+            animation: dash 3s linear forwards; /* 'forwards'로 변경하여 애니메이션이 끝난 후 상태 유지 */
+        }
+
+        @keyframes dash {
+            from {
+                stroke-dashoffset: 500;
+            }
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        .stroke {
+            width: 500px;
+            height: 500px;
+            background-image: url(../img/group\ 1.png);
+            position: relative; /* 자식 요소의 절대 위치 조정을 위해 필요 */
+            z-index: 0;
+        }
+
+        .line {
+            position: absolute; /* 수평 선 절대 위치 */
+            left: 0; /* 왼쪽 정렬 */
+            right: 0; /* 오른쪽 정렬 */
+            height: 2px; /* 선의 두께 */
+            background-color: red; /* 선의 색상 */
+            animation: lineAnimation 3s linear forwards; /* 애니메이션 적용 */
+            opacity: 0; /* 초기 투명도 */
+        }
+
+        @keyframes lineAnimation {
+            0% {
+                transform: translateX(-500px); /* 왼쪽에서 시작 */
+                opacity: 0; /* 시작할 때는 보이지 않음 */
+            }
+            50% {
+                opacity: 1; /* 중간에 보이기 시작 */
+            }
+            100% {
+                transform: translateX(0); /* 원래 위치로 이동 */
+                opacity: 1; /* 끝날 때까지 보임 */
+            }
+        }
+
+        .perpe {
+            position: absolute; /* 수직 선 절대 위치 */
+            width: 2px; /* 선의 두께 */
+            height: 500px; /* 선의 높이 */
+            background-color: blue; /* 선의 색상 */
+            animation: verticalAnimation 3s linear forwards; /* 애니메이션 적용 */
+            opacity: 0; /* 초기 투명도 */
+        }
+
+        @keyframes verticalAnimation {
+            0% {
+                transform: translateY(-500px); /* 위에서 시작 */
+                opacity: 0; /* 시작할 때는 보이지 않음 */
+            }
+            50% {
+                opacity: 1; /* 중간에 보이기 시작 */
+            }
+            100% {
+                transform: translateY(0); /* 원래 위치로 이동 */
+                opacity: 1; /* 끝날 때까지 보임 */
+            }
+        }
+
+        .diagonal {
+            position: absolute;
+            width: 2px; /* 선의 두께 */
+            height: 500px; /* 선의 높이 */
+            background-color: green; /* 사선의 색상 */
+            transform: rotate(45deg); /* 사선 각도 */
+            animation: diagonalAnimation 3s linear forwards; /* 애니메이션 적용 */
+            opacity: 0; /* 초기 투명도 */
+        }
+
+        @keyframes diagonalAnimation {
+            0% {
+                transform: translate(-500px, 500px) rotate(45deg); /* 위에서 시작 */
+                opacity: 0; /* 시작할 때는 보이지 않음 */
+            }
+            50% {
+                opacity: 1; /* 중간에 보이기 시작 */
+            }
+            100% {
+                transform: translate(0, 0) rotate(45deg); /* 원래 위치로 이동 */
+                opacity: 1; /* 끝날 때까지 보임 */
+            }
+        }
+
+        .circle {
+            position: absolute;
+            width: 20px; /* 원의 지름 */
+            height: 20px; /* 원의 지름 */
+            background-color: orange; /* 원의 색상 */
+            border-radius: 50%; /* 원 형태로 만들기 */
+            animation: circleAnimation 3s linear forwards; /* 애니메이션 적용 */
+            opacity: 0; /* 초기 투명도 */
+        }
+
+        @keyframes circleAnimation {
+            0% {
+                transform: translateY(-500px); /* 위에서 시작 */
+                opacity: 0; /* 시작할 때는 보이지 않음 */
+            }
+            50% {
+                opacity: 1; /* 중간에 보이기 시작 */
+            }
+            100% {
+                transform: translateY(0); /* 원래 위치로 이동 */
+                opacity: 1; /* 끝날 때까지 보임 */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="stroke">
+        <div class="line" style="top: 30px;"></div>
+        <div class="line" style="top: 150px;"></div>
+        <div class="line" style="top: 235px;"></div>
+        <div class="line" style="top: 440px;"></div>
+        
+        <!-- 수직 선 추가 -->
+        <div class="perpe" style="left: 50px; top: 0;"></div>   <!-- 첫 번째 수직 선 -->
+        <div class="perpe" style="left: 130px; top: 0;"></div>  <!-- 두 번째 수직 선 -->
+        <div class="perpe" style="left: 210px; top: 0;"></div>  <!-- 세 번째 수직 선 -->
+        <div class="perpe" style="left: 290px; top: 0;"></div>  <!-- 네 번째 수직 선 -->
+        <div class="perpe" style="left: 370px; top: 0;"></div>  <!-- 다섯 번째 수직 선 -->
+
+        <!-- 사선 추가 -->
+        <div class="diagonal" style="left: 100px; top: 0;"></div> <!-- 첫 번째 사선 -->
+        <div class="diagonal" style="left: 200px; top: 0;"></div> <!-- 두 번째 사선 -->
+
+        <!-- 원 추가 -->
+        <div class="circle" style="left: 50px; top: 100px;"></div>  <!-- 첫 번째 원 -->
+        <div class="circle" style="left: 150px; top: 200px;"></div> <!-- 두 번째 원 -->
+        <div class="circle" style="left: 250px; top: 300px;"></div> <!-- 세 번째 원 -->
+    </div>
+</body>
+</html>

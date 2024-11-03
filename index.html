@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/vision.css">
     <link rel="stylesheet" href="css/service.css">
+    <link rel="stylesheet" href="css/video.css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
 
@@ -43,11 +44,11 @@
 
     <nav>
         <ul>
-            <li><a href="#vision">VISION</a></li>
-            <li><a href="#design">DESIGN</a></li>
-            <li><a href="#service">SERVICE</a></li>
-            <li><a href="#device">DEVICE</a></li>
-            <li><a href="#video">VIDEO</a></li>
+            <li><a href="#visionMenu">VISION</a></li>
+            <li><a href="#designMenu">DESIGN</a></li>
+            <li><a href="#serviceMenu">SERVICE</a></li>
+            <li><a href="#deviceMenu">DEVICE</a></li>
+            <li><a href="#videoMenu">VIDEO</a></li>
         </ul>
     </nav>
 </header>
@@ -104,7 +105,7 @@
         <p class="top">Top</p>
     </button>
 
-<section id="vision">
+<section id="visionMenu">
 
     <div class="vision1">
         <div class="vision1Txt">
@@ -337,11 +338,11 @@
             <div class="per per1-4">
                 <p class="perC">02</p>
                 <p class="perP">구급대원과 병원 간의 커뮤니케이션 플랫폼이 필요해요.<br>
-                바쁜 응급실에서 구두로의 소통이 어렵고 <span class="perBold2">환자 인계가 원활하게 이루어지지 않아요.</span></p>
+                바쁜 응급실에서 구두로의 소통이 어렵고 <span class="perBold">환자 인계가 원활하게 이루어지지 않아요.</span></p>
             </div>
             <div class="per per1-5">
                 <p class="perC">03</p>
-                <p class="perP">응급상황에서 구급대원이 어디까지 왔는지 <span class="perBold3">실시간 위치 정보를 확인할 수 있으면 좋겠어요.</span><br>
+                <p class="perP">응급상황에서 구급대원이 어디까지 왔는지 <span class="perBold">실시간 위치 정보를 확인할 수 있으면 좋겠어요.</span><br>
                 구급대원의 상황을 알 수 없어 대기하는 시간동안 초조함을 느껴요.</p>
             </div>
             <div class="per per1-6"><img src="img/shieldP.svg"></div>
@@ -391,11 +392,8 @@
 
 </section>
 
-<section id="video">
-<video></video>
-</section>
 
-<section id="design">
+<section id="designMenu">
 
     <div class="keyword">
         <div class="keywordTxt">
@@ -500,7 +498,34 @@
                         </div>
             
                         <div class="imgL">
-                            <div class="box">grid box</div>
+                            <div class="stroke">
+                                <img class="logoGrid" src="stroke/img/logo-svg.svg" alt="">
+                                <!-- 수평 선 -->
+                                <div class="line1" style="top: 29px;"></div>
+                                <div class="line1" style="top: 148px;"></div>
+                                <div class="line1" style="top: 235px;"></div>
+                                <div class="line1" style="top: 441px;"></div>
+                                
+                                <!-- 수직 선 -->
+                                <div class="perpe" style="left: 30px; top: 0;"></div>   
+                                <div class="perpe" style="left: 150px; top: 0;"></div>  
+                                <div class="perpe" style="left: 235px; top: 0;"></div>  
+                                <div class="perpe" style="left: 320px; top: 0;"></div>  
+                                <div class="perpe" style="left: 440px; top: 0;"></div>  
+                        
+                                <div class="diagonal" style="left: 215px; top: -120px; height: 750px; transform: rotate(45deg);"></div> <!-- 대각선 오른쪽 위에서 왼쪽 아래로 -->
+                                <div class="diagonal" style="left: 255px; top: -120px; height: 751px; transform: rotate(-45deg);"></div> <!-- 대각선 왼쪽 위에서 오른쪽 아래로 -->
+                                
+                                <!-- 원 형  -->
+                                <div class="containerC">
+                                    <!-- 큰 원 -->
+                                    <div class="circleG large-circle"></div> 
+                                    <!-- 중간 원 -->
+                                    <div class="circleG medium-circle"></div>
+                                    <!-- 작은 원 -->
+                                    <div class="circleG small-circle"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
             </div>
@@ -557,7 +582,7 @@
 
 </section>
 
-<section id="service">
+<section id="serviceMenu">
 
     <div class="paramedic0">
         <div class="paramedic1">
@@ -705,7 +730,7 @@
 
 </section>
 
-<section id="device">
+<section id="deviceMenu">
 
     <div class="navigation">
 
@@ -733,6 +758,14 @@
     <div class="device-slider">slider</div>
 
 </section>
+
+<section id="videoMenu">
+    <div class="videoF-container">
+        <video src="img/videoFinal.mp4"></video>
+    </div>
+</section>
+
+
 
 </div>
 

@@ -511,36 +511,11 @@ footer{
 
 .perBold{
     font-family: Pretendard, 'sans-serif';
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     /* color: #ffffff; */
     margin: 0;
     padding: 0;
-    background-color: #E0FD48;
-    color: black;
-    font-weight: 600;
-    line-height: 2rem;
-}
-
-.perBold2{
-    font-family: Pretendard, 'sans-serif';
-    font-size: 1.2rem;
-    /* color: #ffffff; */
-    margin: 0;
-    padding: 0;
-    background-color: #FF3e3e;
-    color: black;
-    font-weight: 600;
-    line-height: 2rem;
-}
-
-.perBold3{
-    font-family: Pretendard, 'sans-serif';
-    font-size: 1.2rem;
-    /* color: #ffffff; */
-    margin: 0;
-    padding: 0;
-    background-color: #0177ff;
-    color: black;
+    color: white;
     font-weight: 600;
     line-height: 2rem;
 }

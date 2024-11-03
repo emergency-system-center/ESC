@@ -251,22 +251,22 @@ const observer = new IntersectionObserver((entries) => {
 
 //menu
 
-// 메뉴 클릭시 부드러운 스크롤
-document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
+// // 메뉴 클릭시 부드러운 스크롤
+// document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+//     anchor.addEventListener('click', function (e) {
+//         e.preventDefault();
         
-        const targetId = this.getAttribute('href').substring(1);
-        const targetElement = document.getElementById(targetId);
+//         const targetId = this.getAttribute('href').substring(1);
+//         const targetElement = document.getElementById(targetId);
         
-        if (targetElement) {
-            window.scrollTo({
-                top: targetElement.offsetTop,
-                behavior: 'smooth'
-            });
-        }
-    });
-});
+//         if (targetElement) {
+//             window.scrollTo({
+//                 top: targetElement.offsetTop,
+//                 behavior: 'smooth'
+//             });
+//         }
+//     });
+// });
 
 
 //디자인 시스템
@@ -409,3 +409,13 @@ document.addEventListener("DOMContentLoaded", function() {
         observer.observe(personaContainer);
     }
 });
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,10 @@
+.videoF-container {
+    width: 100%; /* 부모 요소의 70% */
+    margin: 0 auto; /* 가운데 정렬 */
+    overflow: hidden; /* 비디오가 부모 요소 범위를 넘지 않도록 */
+}
+
+.videoF-container video {
+    width: 100%; /* 컨테이너의 너비에 맞추기 */
+    height: auto; /* 비율을 유지하면서 자동 높이 설정 */
+}
