@@ -12,7 +12,7 @@
 
 .paramedic1 {
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(13, 1fr);
+    grid-template-rows: repeat(12, 1fr);
     gap: 2vw;
     border-radius: 20px;
     margin-right: 1vw;
@@ -20,7 +20,7 @@
 
 .paramedic2 {
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(9, 1fr);
+    grid-template-rows: repeat(8, 1fr);
     gap: 2vw;
     border-radius: 20px;
     margin-left: 1vw;
@@ -43,7 +43,7 @@
     padding: 2rem;
 }
 
-.paramedic1-2 img{
+.paramedic1-2 video{
     width: 70%;
 }
 
@@ -66,7 +66,7 @@
 
 .paramedic1-4{
     grid-column: span 1;
-    grid-row: span 3;
+    grid-row: span 2;
     background-color: #1e1e1e;
     border-radius: 20px;
     padding: 2rem;
@@ -109,7 +109,7 @@
 
 .paramedic2-2{
     grid-column: span 1;
-    grid-row: span 2;
+    grid-row: span 1;
     background-color: #1e1e1e;
     border-radius: 20px;
 }
@@ -129,6 +129,10 @@
     background-color: #E0FD48;
 }
 
+.par4{
+    margin-left: 4rem;
+}
+
 .circleP{
     background-color: #E0FD48;
     width: 25px;
@@ -138,6 +142,7 @@
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
+    margin-bottom: 1rem;
 
 }
 
@@ -150,12 +155,27 @@
 }
 
 
+
+
+.paramedic0-1 .parCheck div{
+    opacity: 0;
+    transform: translateX(-50rem);
+    transition: opacity .7s ease-out, transform .7s ease-out;
+}
+.paramedic0-1 .parCheck div.visible {
+    opacity: 1; 
+    transform: translateX(0rem);
+}
+
+
+
 .parCheck{
     display:grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 2vw;
     border-radius: 20px;
+    margin-bottom: 12rem;
 }
 
 .parCheck img{
@@ -276,6 +296,27 @@
     align-items: center;
 }
 
+.paramedic0-2Txt{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12rem;
+    
+}
+
+.paramedic0-2Txt p{
+    margin-bottom: 3rem;
+    align-self: flex-start;
+}
+
+.paramedic0-2Txt video{
+   width: 120%;
+   
+}
+
 .paramedic0-3{
     margin-bottom: 12rem;
 }
@@ -317,7 +358,7 @@
 .hospital1-2{
     grid-column: span 1;
     grid-row: span 3;
-    background-color: #1e1e1e;
+    background-color: #212121;
     border-radius: 20px;
     display: flex;
     justify-content: center;
@@ -325,12 +366,14 @@
     padding: 2rem;
 }
 
-.hospital1-2 img{
+.hospital1-2 video{
     width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .hospital1-3 img{
-    width: 100%;
+    width: 70%;
 }
 
 .hospital1-3{
@@ -339,15 +382,30 @@
     background-color: #1e1e1e;
     border-radius: 20px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 2rem;
+    text-align: left;
+}
+
+.hospital1-3 p{
+    align-self: flex-start;
+    margin-left: 6rem;
+}
+
+.hospital1-3 .service-sub2{
+    margin-bottom: 1rem;
+}
+
+.hospital1-3 .service-sub{
+    margin-bottom: 3rem;
 }
 
 .hospital2-1{
     grid-column: span 1;
     grid-row: span 4;
-    background-color: #1e1e1e;
+    background-color: #212121;
     border-radius: 20px;
     display: flex;
     justify-content: center;
@@ -356,9 +414,11 @@
     
 }
 
-.hospital2-1 img{
+.hospital2-1 video{
     width: 80%;
 }
+
+
 
 .hospital2-2{
     grid-column: span 1;
@@ -366,6 +426,20 @@
     background-color: #ff3e3e;
     border-radius: 20px;
 }
+
+.hospital3 .hos3 img{
+    opacity: 0;
+    transform: translateZ(-9.7rem);
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+.hospital3 .hos3 img.visible{
+    opacity: 1;
+    transform: translateZ(0rem);
+}
+
+
+
+
 
 .hospital3{
     display: grid;
@@ -382,10 +456,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
+
+
+
 .hos3 img{
-    width:130%;
+    width:120%;
 }
 
 .hos3Txt{
@@ -394,6 +472,19 @@
 
 .hospital4{
     margin-bottom: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hospital4 p{
+    align-self: flex-start;
+    margin-bottom: 3rem;
+}
+
+.hospital4 video {
+    width: 60%;
 }
 
 .hospital4 .service-main{
@@ -411,7 +502,7 @@
 }
 
 .citizen1 {
-    flex-basis: 60%; /* 각 컨테이너가 50%의 너비 차지 */
+    flex-basis: 50%; /* 각 컨테이너가 50%의 너비 차지 */
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(15, 1fr);
@@ -426,32 +517,52 @@
     border-radius: 20px;
 }
 
+
+
 .citizen1-2{
     grid-column: span 1;
     grid-row: span 3;
     border-radius: 20px;
     /* padding: 2rem 0; */
+    display: flex;
+    align-items: flex-end;
 }
 
-.citizen1-2 .service-main{
+/* .citizen1-2 .service-main{
     padding-bottom: 3rem; 
-}
+} */
 
 .citizen1-3{
     grid-column: span 1;
     grid-row: span 3;
     background-color: #1e1e1e;
     border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.citizen1-3 img{
+    width: 70%;
+}
+
 .citizen1-4{
     grid-column: span 1;
     grid-row: span 6;
     background-color: #1e1e1e;
     border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.citizen1-4 img{
+    width: 70%;
 }
 
 .citizen2 {
-    flex-basis: 40%; /* 각 컨테이너가 50%의 너비 차지 */
+    flex-basis: 50%; /* 각 컨테이너가 50%의 너비 차지 */
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1, 1fr);
@@ -466,16 +577,36 @@
     background-color: #1e1e1e;
     border-radius: 20px;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.citizen2-1 video{
+    width: 60%;
 }
 
 .citizen3{
     margin-bottom: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.citizen3 p{
+    margin-bottom: 3rem;
+    align-self: flex-start;
+}
+
+.citizen3 video{
+    width: 80%;
 }
 
 .citizen4{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     gap: 2vw;
     border-radius: 20px;
     margin-bottom: 12rem;
@@ -483,15 +614,26 @@
 
 .citizen4-1{
     grid-column: span 1;
+    grid-row: span 2;
+    background-color: #1e1e1e;
+    border-radius: 20px;
+    padding: 2rem;
+}
+
+.citizen4-1 img{
+    width: 90%;
+}
+
+.citizen4-2{
+    grid-column: span 1;
     grid-row: span 3;
     background-color: #1e1e1e;
     border-radius: 20px;
-}
-.citizen4-2{
-    grid-column: span 1;
-    grid-row: span 4;
-    background-color: #1e1e1e;
-    border-radius: 20px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2vw;
 }
 .citizen4-3{
     grid-column: span 1;
@@ -504,3 +646,62 @@
 .citizen4Txt .service-main{
     margin-bottom: 3rem;
 }
+
+.citizen4-1 .service-sub2{
+    margin-bottom: 3rem;
+}
+
+.city4-1div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10rem;
+    background-color: #101010;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: white;
+}
+
+.city4-1div:hover{
+    background-color: #0177FF;
+}
+
+.city4-1div1{
+    margin-bottom: 3rem;
+}
+
+.city4-2div {
+    color: white;
+    display: flex;
+    align-items: center;
+    background-color: #101010;
+    border-radius: 20px;
+    width: 90%;
+    height: 4.5rem;
+    align-self: center;
+}
+
+.circle4-2{
+    width:30px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: #0177FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 500;
+    font-size: 1.15rem;
+    margin-right: 2rem;
+    margin-left: 3rem;
+}
+
+.city4-2div:hover{
+    background-color: #0177FF;
+    .circle4-2{
+        background-color: #101010;
+    }
+}
+

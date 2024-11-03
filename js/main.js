@@ -251,42 +251,47 @@ const observer = new IntersectionObserver((entries) => {
 
 //menu
 
-// // 메뉴 클릭시 부드러운 스크롤
-// document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
-//     anchor.addEventListener('click', function (e) {
-//         e.preventDefault();
-        
-//         const targetId = this.getAttribute('href').substring(1);
-//         const targetElement = document.getElementById(targetId);
-        
-//         if (targetElement) {
-//             window.scrollTo({
-//                 top: targetElement.offsetTop,
-//                 behavior: 'smooth'
-//             });
-//         }
-//     });
-// });
+document.addEventListener("DOMContentLoaded", function () {
+    const headerHeight = 80; // 헤더 높이 설정
+    document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault(); // 기본 이동 기능 중지
+
+            const targetId = this.getAttribute('href');
+            const target = document.querySelector(targetId);
+            if (target) {
+                const targetTop = target.getBoundingClientRect().top + window.pageYOffset;
+                const currentTop = window.pageYOffset;
+
+                // 헤더 높이를 고려하여 스크롤 위치 조정
+                const adjustedScrollTop = targetTop - headerHeight;
+
+                window.scrollTo({
+                    top: adjustedScrollTop,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+});
 
 
 //디자인 시스템
 
 document.addEventListener("DOMContentLoaded", function() {
-    const gridItems = document.querySelectorAll(".font, .mainColor, .subColor1, .subColor2, .subColor3");
+    // gridItems 선택자를 더 구체적으로 변경하여 원들을 제외
+    const gridItems = document.querySelectorAll(".systemGrid > .font, .systemGrid > .mainColor, .systemGrid > .subColor1, .systemGrid > .subColor2, .systemGrid > .subColor3");
     const gridContainer = document.querySelector(".systemGrid-container");
 
-    // 옵저버 설정
     const observerOptions = {
-        threshold: 0.3  // 요소가 20% 정도 화면에 보일 때 트리거
+        threshold: 0.3
     };
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
-                // 컨테이너가 화면에 보이면 모든 그리드 아이템에 애니메이션 적용
                 gridItems.forEach((el, index) => {
-                    // 각 요소에 인덱스를 기반으로 지연 시간 설정
-                    let delay = 0; // 기본 지연 시간
+                    let delay = 0;
 
                     if (index === 0 || index === 1) {
                         delay = 0.2;
@@ -300,7 +305,6 @@ document.addEventListener("DOMContentLoaded", function() {
                     el.classList.add("visible");
                 });
             } else {
-                // 컨테이너가 화면에서 벗어나면 모든 그리드 아이템의 애니메이션 초기화
                 gridItems.forEach(el => {
                     el.classList.remove("visible");
                     el.style.transitionDelay = '0s';
@@ -309,7 +313,6 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }, observerOptions);
 
-    // systemGrid-container 관찰 시작
     if (gridContainer) {
         observer.observe(gridContainer);
     }
@@ -417,5 +420,205 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
+//영상
+function setupVideoControls(videoId, messageId, overlayId) {
+    var video = document.getElementById(videoId);
+    var message = document.getElementById(messageId);
+    var overlay = document.getElementById(overlayId);
+
+    if (!video) {
+        console.error("비디오 요소를 찾을 수 없습니다:", videoId);
+        return;
+    }
+    if (!message) {
+        console.error("메시지 요소를 찾을 수 없습니다:", messageId);
+        return;
+    }
+    if (!overlay) {
+        console.error("오버레이 요소를 찾을 수 없습니다:", overlayId);
+        return;
+    }
+
+    // 비디오가 로드될 때 메시지와 오버레이를 표시
+    video.addEventListener('loadeddata', function () {
+        console.log("비디오가 로드되었습니다.");
+        message.style.display = 'block';
+        overlay.style.display = 'block'; // 비디오가 로드되면 오버레이 표시
+    });
+
+    // 비디오 클릭 시 재생 또는 일시 정지
+    video.addEventListener('click', function () {
+        console.log("비디오가 클릭되었습니다.");
+        if (video.paused) {
+            video.play();
+            message.style.display = 'none';
+            overlay.style.display = 'none'; // 재생 시 오버레이 숨기기
+        } else {
+            video.pause();
+            message.style.display = 'block';
+            overlay.style.display = 'block'; // 일시 정지 시 오버레이 표시
+        }
+    });
+
+    // 비디오 재생 시 오버레이 숨기기
+    video.addEventListener('play', function () {
+        console.log("비디오가 재생 중입니다.");
+        message.style.display = 'none';
+        overlay.style.display = 'none';
+    });
+
+    // 비디오 일시정지 시 오버레이 표시
+    video.addEventListener('pause', function () {
+        console.log("비디오가 일시 정지되었습니다.");
+        message.style.display = 'block';
+        overlay.style.display = 'block';
+    });
+}
+
+// DOM이 로드된 후에 비디오 제어 설정을 초기화
+document.addEventListener('DOMContentLoaded', function () {
+    setupVideoControls('videoF', 'playMessage', 'overlay');
+});
 
 
+
+
+
+//로고 그리드
+
+// Logo Grid Animation
+document.addEventListener("DOMContentLoaded", function() {
+    const logoContainer = document.querySelector('.imgL');
+    
+    const resetAnimations = (element) => {
+        // 모든 라인 리셋
+        element.querySelectorAll('.line1').forEach(line => {
+            line.style.animation = 'none';
+            line.offsetHeight; // Trigger reflow
+            line.style.animation = 'lineAnimation 1s linear forwards';
+        });
+
+        // 모든 수직선 리셋
+        element.querySelectorAll('.perpe').forEach(perpe => {
+            perpe.style.animation = 'none';
+            perpe.offsetHeight; // Trigger reflow
+            perpe.style.animation = 'verticalAnimation 1s linear forwards';
+        });
+
+        // 모든 대각선 리셋
+        element.querySelectorAll('.diagonal').forEach(diagonal => {
+            diagonal.style.animation = 'none';
+            diagonal.offsetHeight; // Trigger reflow
+            diagonal.style.animation = 'diagonalAnimation 1s linear forwards';
+        });
+
+        // 로고 이미지 리셋
+        const logoGrid = element.querySelector('.logoGrid');
+        if (logoGrid) {
+            logoGrid.style.animation = 'none';
+            logoGrid.offsetHeight; // Trigger reflow
+            logoGrid.style.animation = 'fadeIn2 3s ease';
+        }
+
+        // 원형 요소들 리셋
+        element.querySelectorAll('.circleG').forEach(circle => {
+            circle.style.animation = 'none';
+            circle.offsetHeight; // Trigger reflow
+            circle.style.animation = 'fadeIn 5s forwards';
+        });
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // 요소가 뷰포트에 들어올 때 모든 애니메이션 리셋 및 재시작
+                resetAnimations(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.7, // 50% 이상 보일 때 트리거
+    });
+
+    if (logoContainer) {
+        observer.observe(logoContainer);
+    }
+});
+
+
+//헤더 스크롤 삭제
+
+let lastScrollTop = 0; // 사용자가 마지막으로 스크롤한 위치를 저장할 변수
+    const header = document.querySelector('header'); // 헤더 요소 선택
+
+    window.addEventListener('scroll', function() {
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        
+        if (scrollTop > lastScrollTop) {
+            // 아래로 스크롤할 때 헤더 숨기기
+            header.style.top = "-80px"; // 헤더의 높이만큼 위로 올려 숨김
+        } else {
+            // 위로 스크롤할 때 헤더 보이기
+            header.style.top = "0";
+        }
+        lastScrollTop = scrollTop; // 마지막 스크롤 위치 업데이트
+    });
+
+    //체크박스
+
+    window.addEventListener('scroll', function() {
+        const parCheck = document.querySelector('.parCheck');
+        const parCheckElements = document.querySelectorAll('.parCheck div'); // .parCheck 내의 모든 요소 선택
+        const rectParCheck = parCheck.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+    
+        
+        if (rectParCheck.top <= windowHeight * 0.3 && rectParCheck.bottom >= 0) {
+            parCheck.classList.add('visible');
+    
+            
+            parCheckElements.forEach((el, index) => {
+                let delay = 0;
+    
+                // 인덱스에 따라 지연 시간 설정
+                if (index === 0 || index === 1 || index === 2 || index === 3) {
+                    delay = 0.2;
+                } else if (index === 4 || index === 5 || index === 6 || index === 7) {
+                    delay = 0.8;
+                } else if (index === 8 || index === 9 || index === 10 || index === 11) {
+                    delay = 1.15;
+                }
+    
+                el.style.transitionDelay = `${delay}s`;
+                el.classList.add("visible");
+            });
+        } else {
+            parCheckElements.forEach(el => {
+                el.classList.remove("visible");
+                el.style.transitionDelay = '0s';
+            });
+        }
+    });
+
+    //환자알림
+
+    window.addEventListener('scroll', function() {
+        const hospital3 = document.querySelector('.hospital3');
+        const hospitalElements = document.querySelectorAll('.hospital3 .hos3 img');
+        const rectHospital3 = hospital3.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+    
+        // hospital3가 뷰포트의 30%에 도달했을 때
+        if (rectHospital3.top <= windowHeight * 0.7 && rectHospital3.bottom >= 0) {
+            hospitalElements.forEach((el, index) => {
+                const delay = index * 0.4; // 각 요소에 대한 지연 시간 설정 (0.6초씩 증가)
+                el.style.transitionDelay = `${delay}s`;
+                el.classList.add("visible");
+            });
+        } else {
+            hospitalElements.forEach(el => {
+                el.classList.remove("visible");
+                el.style.transitionDelay = '0s';
+            });
+        }
+    });
+    

@@ -34,7 +34,7 @@
     border-radius: 15px;
     border: 3px solid #E0FD48;
     background-color: #1e1e1e;
-    background-image: url('/img/per1bg.svg');
+    background-image: url('../img/per1bg.svg');
     background-size: 120%; /* 이미지가 요소 전체에 맞게 조정됩니다 */
     background-position: center; /* 이미지가 중앙에 위치합니다 */
     background-repeat: no-repeat; /* 이미지가 반복되지 않습니다 */
@@ -68,7 +68,7 @@
     border-radius: 15px;
     border: 3px solid #FF3E3E;
     background-color: #1e1e1e;
-    background-image: url('/img/per2bg.svg');
+    background-image: url('../img/per2bg.svg');
     background-size: 120%; /* 이미지가 요소 전체에 맞게 조정됩니다 */
     background-position: center; /* 이미지가 중앙에 위치합니다 */
     background-repeat: no-repeat; /* 이미지가 반복되지 않습니다 */
@@ -80,7 +80,7 @@
     border-radius: 15px;
     border: 3px solid #0177FF;
     background-color: #1e1e1e;
-    background-image: url('/img/per3bg.svg');
+    background-image: url('../img/per3bg.svg');
     background-size: 120%; /* 이미지가 요소 전체에 맞게 조정됩니다 */
     background-position: center; /* 이미지가 중앙에 위치합니다 */
     background-repeat: no-repeat; /* 이미지가 반복되지 않습니다 */
@@ -193,7 +193,7 @@
 .scene {
     width: 37.5rem; /* 600px에 해당 */
     height: 37.5rem; /* 600px에 해당 */
-    margin: 2rem auto; /* 32px 여백 */
+    margin-top: 2rem;
     perspective: 1000px;
 }
 
@@ -576,6 +576,10 @@ li{
     margin-top: 1rem;
 }
 
+.svIcon2{
+    width:4.5rem; !important
+}
+
 .sv2{
     overflow: hidden;
 }
@@ -785,4 +789,26 @@ li{
 .line{
     border: solid 0.95px #FFF;
     margin: 1.5rem 0;
+}
+
+.nameTxt{
+    background-color: #E0FD48;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    width: 70%;
+    height: 15rem;
+    font-size: 1.2rem;
+    color:black;
+    line-height: 3rem;
+    margin-bottom: 12rem;
+}
+
+.naming{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }

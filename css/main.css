@@ -12,6 +12,7 @@ body {
     background-color: #101010;
     font-size: 16px; /* 1rem = 16px */
     overflow-x: hidden;
+    cursor: url('../img/cursor.svg'), auto; /* SVG 커서로 변경 */
 }
 
 .container{
@@ -60,6 +61,8 @@ header {
     margin: 0 auto;
     width: 73%;
     gap: 20px; /* 요소 간의 간격 추가 */
+    transition: top 0.2s ease-in-out;
+
 }
 
 
@@ -535,14 +538,15 @@ footer{
 
 .service-main{
     font-family: Pretendard, 'sans-serif';
-    font-size: 2rem;
+    font-size: 2.2rem;
     /* color: #ffffff; */
     margin: 0;
     padding: 0;
     color: white;
-    line-height: 3rem;
+    line-height: 3.5rem;
     font-weight: 600;
 }
+
 
 .service-sub{
     font-family: Pretendard, 'sans-serif';
@@ -556,7 +560,7 @@ footer{
 
 .service-sub2{
     font-family: Pretendard, 'sans-serif';
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin: 0;
     padding: 0;
     color: white;
@@ -570,4 +574,21 @@ footer{
     color: #000000;
     margin:0;
     padding: 0;
+}
+
+/* .namingT{
+    background-color: #1e1e1e;
+    padding:0.5rem 1rem;
+    border-radius: 50px;
+    color: white;
+} */
+
+.namingT2{
+    font-family: Conthrax, 'sans-serif';
+    background-color: #1e1e1e;
+    padding:0.5rem 1rem;
+    border-radius: 50px;
+    color: #E0FD48;
+    font-size: 1.5rem;
+    font-weight: 500;
 }
