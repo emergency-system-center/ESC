@@ -8,7 +8,7 @@
     display: flex;
     border-radius: 20px;
     width: 100%; /* 전체 너비 설정 */
-    margin-bottom: 12rem;
+    margin-bottom: 15rem;
 }
 
 .paramedic1, .paramedic2 {
@@ -204,7 +204,7 @@
     grid-template-rows: repeat(3, 1fr);
     gap: 2vw;
     border-radius: 20px;
-    margin-bottom: 12rem;
+    margin-bottom: 15rem;
     position: relative;
     overflow: visible;
 }
@@ -370,14 +370,14 @@
 }
 
 .paramedic0-3{
-    margin-bottom: 12rem;
+    margin-bottom: 15rem;
 }
 
 .hospital{
     display: flex;
     border-radius: 20px;
     width: 100%; /* 전체 너비 설정 */
-    margin-bottom: 12rem;
+    margin-bottom: 15rem;
 }
 
 .hospital1, .hospital2 {
@@ -520,7 +520,7 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 2vw;
     border-radius: 20px;
-    margin-bottom: 12rem;
+    margin-bottom: 15rem;
 }
 
 .hos3{
@@ -545,7 +545,7 @@
 }
 
 .hospital4{
-    margin-bottom: 12rem;
+    margin-bottom: 15rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -576,7 +576,7 @@
 }
 
 .service00{
-    margin-bottom: 12rem;
+    margin-bottom: 15rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -608,71 +608,60 @@
     align-items: center;
 }
 
-.citizen{
-    display: flex;
-    border-radius: 20px;
-    width: 100%; /* 전체 너비 설정 */
-    height: auto;
-    margin-bottom: 12rem;
-    align-items: stretch;
 
-}
-
-.citizen1 {
-    flex-basis: 50%; /* 각 컨테이너가 50%의 너비 차지 */
+.citizen {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(15, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     gap: 2vw;
     border-radius: 20px;
-    margin-right: 1vw;
+    margin-bottom: 15rem;
 }
 
-/* .citizen1-1{
+.citizen1-1{
     grid-column: span 1;
-    grid-row: span 0;
+    grid-row: span 1;
     border-radius: 20px;
-} */
-
-
-
-.citizen1-2{
-    grid-column: span 1;
-    grid-row: span 6;
-    border-radius: 20px;
-    padding: 2rem 0;
-    display: flex;
-    position: relative;
-    overflow: visible;
-    align-items: flex-end;
-    background-position: left; /* 중앙 정렬 */
-    background-size: 80%; /* 이미지가 요소 크기에 맞게 조정 */
-    background-repeat: no-repeat; /* 이미지 반복 방지 */
 }
 
-.citizen1-2::before {
+.citizen1-1::before {
     content: '';
     position: absolute;
-    top: -100%; /* 원하는 만큼 확장 */
-    left: -90%;
+    top: -1%; /* 원하는 만큼 확장 */
+    left: -80%;
     right: 0%;
-    bottom: -135%;
+    bottom: -25%;
+    width: 20%; /* 고정된 크기 사용 */
+    height: 100vh; /* 높이 제한 */
     background-image: url('../img/cityBg.svg');
     background-repeat: no-repeat;
     background-position: center ;
-    background-size: 60%;
+    background-size: 20%;
+    rotate:calc(-12deg);
     z-index: -1; /* div 뒤에 배치 */
     border-radius: 20px; /* 동일한 테두리 반경 적용 */
 }
 
 
-/* .citizen1-2 .service-main{
-    padding-bottom: 3rem; 
-} */
+.citizen1-2{
+    grid-column: span 1;
+    grid-row: span 4;
+    border-radius: 20px;
+    padding: 2rem 0;
+    background-color: #212121;
+    display: flex;
+    position: relative;
+    overflow: visible;
+    justify-content: center;
+    align-items: center;
+    background-position: left; /* 중앙 정렬 */
+    background-size: 80%; /* 이미지가 요소 크기에 맞게 조정 */
+    background-repeat: no-repeat; /* 이미지 반복 방지 */
+}
 
 .citizen1-3{
     grid-column: span 1;
-    grid-row: span 3;
+    grid-row: span 1;
     background-color: #1e1e1e;
     border-radius: 20px;
     display: flex;
@@ -686,7 +675,7 @@
 
 .citizen1-4{
     grid-column: span 1;
-    grid-row: span 6;
+    grid-row: span 2;
     background-color: #1e1e1e;
     border-radius: 20px;
     display: flex;
@@ -699,39 +688,15 @@
     width: 70%;
 }
 
-.citizen2 {
-    flex-basis: 50%; /* 각 컨테이너가 50%의 너비 차지 */
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    gap: 2vw;
-    border-radius: 20px;
-    margin-left: 1vw;
-}
 
-.citizen2-1{
-    grid-column: span 1;
-    grid-row: span 1;
-    background-color: #212121;
-    border-radius: 20px;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.citizen2-1 video{
-    width: 60%;
-}
 
 .citizen3{
-    margin-bottom: 12rem;
+    margin-bottom: 15rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
 .citizen3 p{
     margin-bottom: 3rem;
     align-self: flex-start;
@@ -758,7 +723,7 @@
     grid-template-rows: repeat(3, 1fr);
     gap: 2vw;
     border-radius: 20px;
-    margin-bottom: 12rem;
+    margin-bottom: 15rem;
 }
 
 .citizen4-1{
@@ -842,7 +807,7 @@
     align-items: center;
     color: white;
     font-weight: 500;
-    font-size: 1.15rem;
+    font-size: 1.12rem;
     margin-right: 2rem;
     margin-left: 3rem;
 }

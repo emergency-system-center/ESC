@@ -127,16 +127,16 @@ $(document).ready(function () {
 });
 
 function MovingMock1() {
-    $(".mock1").animate({ marginTop: "-200px" }, 2700, "swing", function () { // 위에서 아래로
-        $(this).animate({ marginTop: "150px" }, 2700, "swing", function () {
+    $(".mock1").animate({ marginTop: "-180px" }, 2700, "swing", function () { // 위에서 아래로
+        $(this).animate({ marginTop: "170px" }, 2700, "swing", function () {
             MovingMock1();
         });
     });
 }
 
 function MovingMock2() {
-    $(".mock2").animate({ marginTop: "200px" }, 2700, "swing", function () { // 아래에서 위로
-        $(this).animate({ marginTop: "0px" }, 2700, "swing", function () {
+    $(".mock2").animate({ marginTop: "170px" }, 2700, "swing", function () { // 아래에서 위로
+        $(this).animate({ marginTop: "-30px" }, 2700, "swing", function () {
             MovingMock2();
         });
     });
@@ -572,7 +572,7 @@ let lastScrollTop = 0; // 사용자가 마지막으로 스크롤한 위치를 �
         const windowHeight = window.innerHeight;
     
         
-        if (rectParCheck.top <= windowHeight * 0.3 && rectParCheck.bottom >= 0) {
+        if (rectParCheck.top <= windowHeight * 0.8 && rectParCheck.bottom >= 0) {
             parCheck.classList.add('visible');
     
             
@@ -610,7 +610,7 @@ let lastScrollTop = 0; // 사용자가 마지막으로 스크롤한 위치를 �
         // hospital3가 뷰포트의 30%에 도달했을 때
         if (rectHospital3.top <= windowHeight * 0.7 && rectHospital3.bottom >= 0) {
             hospitalElements.forEach((el, index) => {
-                const delay = index * 0.4; // 각 요소에 대한 지연 시간 설정 (0.6초씩 증가)
+                const delay = index * 0.3; // 각 요소에 대한 지연 시간 설정 (0.6초씩 증가)
                 el.style.transitionDelay = `${delay}s`;
                 el.classList.add("visible");
             });
