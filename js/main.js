@@ -659,3 +659,41 @@ let lastScrollTop = 0; // 사용자가 마지막으로 스크롤한 위치를 �
 
         window.addEventListener('scroll', revealSection);
     });
+
+
+    //네비 영상 재생
+
+    // 네비게이션 비디오 컨트롤
+document.addEventListener('DOMContentLoaded', function() {
+    const navVideo = document.getElementById('navVideo');
+    if (!navVideo) return;
+
+    // Intersection Observer 설정
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // 비디오가 뷰포트에 들어왔을 때
+                navVideo.currentTime = 0; // 시작 위치로 되감기
+                navVideo.play();
+            } else {
+                // 비디오가 뷰포트에서 벗어났을 때는 일단 계속 재생
+                // 다시 돌아왔을 때 처음부터 재생되도록 하기 위함
+            }
+        });
+    }, {
+        threshold: 0.1 // 10% 정도만 보여도 트리거
+    });
+
+    // navVideo 관찰 시작
+    observer.observe(document.getElementById('navMain'));
+
+    // 비디오 메타데이터 로드 완료 시 자동재생 시작
+    navVideo.addEventListener('loadedmetadata', function() {
+        navVideo.play();
+    });
+
+    // 에러 처리
+    navVideo.addEventListener('error', function(e) {
+        console.error('Navigation video error:', e);
+    });
+});

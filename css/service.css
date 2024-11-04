@@ -1,3 +1,9 @@
+.serviceS{
+    margin-bottom: 6rem;
+}
+
+
+
 .paramedic0 {
     display: flex;
     border-radius: 20px;
@@ -20,7 +26,7 @@
 
 .paramedic2 {
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(8, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     gap: 2vw;
     border-radius: 20px;
     margin-left: 1vw;
@@ -50,7 +56,7 @@
 .paramedic1-3{
     grid-column: span 1;
     grid-row: span 1;
-    background-color: #101010;
+    background-color: black;
     border: solid 2px #E0FD48;
     border-radius: 30px;
     display: flex;
@@ -59,9 +65,10 @@
     padding: 1rem;
 }
 
-.paramedic1-3 img{
+.paramedic1-3 video{
     width: 100%;
     margin-top: 0.5rem;
+    background-color: #0000;
 }
 
 .paramedic1-4{
@@ -94,7 +101,7 @@
 
 .paramedic2-1{
     grid-column: span 1;
-    grid-row: span 2;
+    grid-row: span 1;
     background-color: #1e1e1e;
     border-radius: 20px;
     display: flex;
@@ -110,24 +117,46 @@
 .paramedic2-2{
     grid-column: span 1;
     grid-row: span 1;
-    background-color: #1e1e1e;
+    background-color: #212121;
     border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paramedic2-2 video{
+    width: 70%;
 }
 
 .paramedic2-3{
     grid-column: span 1;
-    grid-row: span 4;
+    grid-row: span 3;
     background-color: #1e1e1e;
     border-radius: 20px;
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.paramedic2-4{
+.paramedic2-3 p{
+    align-self: flex-start;
+    justify-self: flex-start;
+    margin-left: 4rem;
+    margin-bottom: 4rem;
+}
+
+.paramedic2-3 img{
+    width: 80%;
+}
+
+/* .paramedic2-4{
     grid-column: span 1;
     grid-row: span 1;
     border-radius: 20px;
     background-color: #E0FD48;
-}
+} */
 
 .par4{
     margin-left: 4rem;
@@ -326,7 +355,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 12rem;
+    margin-bottom: 24rem;
     
 }
 
@@ -412,7 +441,7 @@
 }
 
 .hospital1-2 video{
-    width: 100%;
+    width: 65%;
     margin: 0;
     padding: 0;
 }
@@ -536,6 +565,49 @@
     margin-bottom: 2rem;
 }
 
+.hos4C{
+    width: 100%;
+    background-color: #0e0e0e;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.service00{
+    margin-bottom: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.service00 p{
+    align-self: flex-start;
+    margin-bottom: 3rem;
+}
+
+.service00 video {
+    width: 105%;
+    background-color: #0e0e0e;
+    border-radius: 50px;
+}
+
+.service00 .service-main{
+    margin-bottom: 2rem;
+}
+
+.serviceV{
+    width: 100%;
+    background-color: #0e0e0e;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .citizen{
     display: flex;
     border-radius: 20px;
@@ -640,7 +712,7 @@
 .citizen2-1{
     grid-column: span 1;
     grid-row: span 1;
-    background-color: #1e1e1e;
+    background-color: #212121;
     border-radius: 20px;
     height: 100%;
     display: flex;
@@ -667,6 +739,17 @@
 
 .citizen3 video{
     width: 80%;
+    background-color: #0e0e0e;
+    border-radius: 50px;
+}
+
+.citizen3C{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0e0e0e;
+    border-radius: 50px;
+    width: 100%;
 }
 
 .citizen4{

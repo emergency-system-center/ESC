@@ -537,6 +537,16 @@ footer{
     line-height: 2rem;
 }
 
+.perP1{
+    font-family: Pretendard, 'sans-serif';
+    font-size: 1.05rem;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+    line-height: 2rem;
+}
+
 .perBold{
     font-family: Pretendard, 'sans-serif';
     font-size: 1.3rem;
