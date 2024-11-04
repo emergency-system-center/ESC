@@ -94,16 +94,29 @@
 /* 텍스트 애니메이션 */
 
 .paramedic1-4 {
-    position: relative; 
+    position: relative;
     overflow: hidden;
 }
 
 .perP1 {
     white-space: nowrap;
-    transform: translateX(-150%);
+    transform: translateX(0%); /* 처음부터 제자리에 위치 */
     transition: transform 0.5s ease;
 }
 
+/* 호버 시 잠깐 왼쪽으로 이동했다가 돌아오는 애니메이션 */
 .paramedic1-4:hover .perP1 {
-    transform: translateX(0%); 
+    animation: slideIn 0.5s ease;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-150%);
+    }
+    50% {
+        transform: translateX(-90%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
 }
