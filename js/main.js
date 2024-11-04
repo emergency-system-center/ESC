@@ -144,27 +144,27 @@ function MovingMock2() {
 
 //--top버튼
 
-    // 버튼 스크롤 시 보이기/숨기기
-    window.onscroll = function() {
+// 버튼 스크롤 시 보이기/숨기기
+window.onscroll = function () {
     const button = document.getElementById("scrollToTopBtn");
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-    button.style.display = "block";
-} else {
-    button.style.display = "none";
-}
+        button.style.display = "block";
+    } else {
+        button.style.display = "none";
+    }
 };
 
-    // 스크롤 애니메이션
-    document.getElementById("scrollToTopBtn").addEventListener("click", function() {
+// 스크롤 애니메이션
+document.getElementById("scrollToTopBtn").addEventListener("click", function () {
     scrollToTop();
 });
 
-    function scrollToTop() {
+function scrollToTop() {
     let currentPosition = document.documentElement.scrollTop || document.body.scrollTop;
     if (currentPosition > 0) {
-    window.requestAnimationFrame(scrollToTop);
-    window.scrollTo(0, currentPosition - currentPosition / 8); // 부드럽게 이동
-}
+        window.requestAnimationFrame(scrollToTop);
+        window.scrollTo(0, currentPosition - currentPosition / 8); // 부드럽게 이동
+    }
 }
 
 
@@ -222,32 +222,32 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        // 요소가 뷰포트에 들어올 때 애니메이션 실행
-        entry.target.classList.add('visible');
-      } else {
-        // 요소가 뷰포트에서 벗어날 때 클래스 제거
-        entry.target.classList.remove('visible');
-        
-        // 애니메이션 리셋을 위해 잠시 대기 후 스타일 초기화
-        setTimeout(() => {
-          entry.target.querySelectorAll('.ai').forEach(ai => {
-            ai.style.animation = 'none';
-            ai.offsetHeight; // 리플로우 강제 실행
-            ai.style.animation = null;
-          });
-        }, 100);
-      }
+        if (entry.isIntersecting) {
+            // 요소가 뷰포트에 들어올 때 애니메이션 실행
+            entry.target.classList.add('visible');
+        } else {
+            // 요소가 뷰포트에서 벗어날 때 클래스 제거
+            entry.target.classList.remove('visible');
+
+            // 애니메이션 리셋을 위해 잠시 대기 후 스타일 초기화
+            setTimeout(() => {
+                entry.target.querySelectorAll('.ai').forEach(ai => {
+                    ai.style.animation = 'none';
+                    ai.offsetHeight; // 리플로우 강제 실행
+                    ai.style.animation = null;
+                });
+            }, 100);
+        }
     });
-  }, {
+}, {
     threshold: 0.5, // 20% 정도 보일 때 트리거
     rootMargin: '-50px' // 뷰포트 상단에서 50px 아래에서부터 감지 시작
-  });
-  
-  // 모든 .aiV 요소에 observer 적용
-  document.querySelectorAll('.aiV').forEach(element => {
+});
+
+// 모든 .aiV 요소에 observer 적용
+document.querySelectorAll('.aiV').forEach(element => {
     observer.observe(element);
-  });
+});
 
 //menu
 
@@ -278,7 +278,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //디자인 시스템
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     // gridItems 선택자를 더 구체적으로 변경하여 원들을 제외
     const gridItems = document.querySelectorAll(".systemGrid > .font, .systemGrid > .mainColor, .systemGrid > .subColor1, .systemGrid > .subColor2, .systemGrid > .subColor3");
     const gridContainer = document.querySelector(".systemGrid-container");
@@ -320,7 +320,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 //Vision-Value
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const svElements = document.querySelectorAll('.sv');
     const serviceContainer = document.querySelector('.service-value1');
 
@@ -369,7 +369,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 //페르소나
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const perElements = document.querySelectorAll(".per");
     const personaContainer = document.querySelector(".persona1");
 
@@ -487,9 +487,9 @@ document.addEventListener('DOMContentLoaded', function () {
 //로고 그리드
 
 // Logo Grid Animation
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const logoContainer = document.querySelector('.imgL');
-    
+
     const resetAnimations = (element) => {
         // 모든 라인 리셋
         element.querySelectorAll('.line1').forEach(line => {
@@ -548,123 +548,123 @@ document.addEventListener("DOMContentLoaded", function() {
 //헤더 스크롤 삭제
 
 let lastScrollTop = 0; // 사용자가 마지막으로 스크롤한 위치를 저장할 변수
-    const header = document.querySelector('header'); // 헤더 요소 선택
+const header = document.querySelector('header'); // 헤더 요소 선택
 
-    window.addEventListener('scroll', function() {
-        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        
-        if (scrollTop > lastScrollTop) {
-            // 아래로 스크롤할 때 헤더 숨기기
-            header.style.top = "-80px"; // 헤더의 높이만큼 위로 올려 숨김
-        } else {
-            // 위로 스크롤할 때 헤더 보이기
-            header.style.top = "0";
-        }
-        lastScrollTop = scrollTop; // 마지막 스크롤 위치 업데이트
-    });
+window.addEventListener('scroll', function () {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-    //체크박스
+    if (scrollTop > lastScrollTop) {
+        // 아래로 스크롤할 때 헤더 숨기기
+        header.style.top = "-80px"; // 헤더의 높이만큼 위로 올려 숨김
+    } else {
+        // 위로 스크롤할 때 헤더 보이기
+        header.style.top = "0";
+    }
+    lastScrollTop = scrollTop; // 마지막 스크롤 위치 업데이트
+});
 
-    window.addEventListener('scroll', function() {
-        const parCheck = document.querySelector('.parCheck');
-        const parCheckElements = document.querySelectorAll('.parCheck div'); // .parCheck 내의 모든 요소 선택
-        const rectParCheck = parCheck.getBoundingClientRect();
-        const windowHeight = window.innerHeight;
-    
-        
-        if (rectParCheck.top <= windowHeight * 0.8 && rectParCheck.bottom >= 0) {
-            parCheck.classList.add('visible');
-    
-            
-            parCheckElements.forEach((el, index) => {
-                let delay = 0;
-    
-                // 인덱스에 따라 지연 시간 설정
-                if (index === 0 || index === 1 || index === 2 || index === 3) {
-                    delay = 0.2;
-                } else if (index === 4 || index === 5 || index === 6 || index === 7) {
-                    delay = 0.5;
-                } else if (index === 8 || index === 9 || index === 10 || index === 11) {
-                    delay = 0.9;
-                }
-    
-                el.style.transitionDelay = `${delay}s`;
-                el.classList.add("visible");
-            });
-        } else {
-            parCheckElements.forEach(el => {
-                el.classList.remove("visible");
-                el.style.transitionDelay = '0s';
-            });
-        }
-    });
+//체크박스
 
-    //환자알림
-
-    window.addEventListener('scroll', function() {
-        const hospital3 = document.querySelector('.hospital3');
-        const hospitalElements = document.querySelectorAll('.hospital3 .hos3 img');
-        const rectHospital3 = hospital3.getBoundingClientRect();
-        const windowHeight = window.innerHeight;
-    
-        // hospital3가 뷰포트의 30%에 도달했을 때
-        if (rectHospital3.top <= windowHeight * 0.7 && rectHospital3.bottom >= 0) {
-            hospitalElements.forEach((el, index) => {
-                const delay = index * 0.3; // 각 요소에 대한 지연 시간 설정 (0.6초씩 증가)
-                el.style.transitionDelay = `${delay}s`;
-                el.classList.add("visible");
-            });
-        } else {
-            hospitalElements.forEach(el => {
-                el.classList.remove("visible");
-                el.style.transitionDelay = '0s';
-            });
-        }
-    });
-    
+window.addEventListener('scroll', function () {
+    const parCheck = document.querySelector('.parCheck');
+    const parCheckElements = document.querySelectorAll('.parCheck div'); // .parCheck 내의 모든 요소 선택
+    const rectParCheck = parCheck.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
 
 
-    //소스 버튼
+    if (rectParCheck.top <= windowHeight * 0.8 && rectParCheck.bottom >= 0) {
+        parCheck.classList.add('visible');
 
-    const toggleButton = document.getElementById('source');
-        const content = document.getElementById('source-url');
 
-        toggleButton.addEventListener('click', () => {
-            if (content.style.display === 'none' || content.style.display === '') {
-                content.style.display = 'block'; // 내용 보이기
-                toggleButton.textContent = '> SOURCE'; // 버튼 텍스트 변경
+        parCheckElements.forEach((el, index) => {
+            let delay = 0;
+
+            // 인덱스에 따라 지연 시간 설정
+            if (index === 0 || index === 1 || index === 2 || index === 3) {
+                delay = 0.2;
+            } else if (index === 4 || index === 5 || index === 6 || index === 7) {
+                delay = 0.5;
+            } else if (index === 8 || index === 9 || index === 10 || index === 11) {
+                delay = 0.9;
+            }
+
+            el.style.transitionDelay = `${delay}s`;
+            el.classList.add("visible");
+        });
+    } else {
+        parCheckElements.forEach(el => {
+            el.classList.remove("visible");
+            el.style.transitionDelay = '0s';
+        });
+    }
+});
+
+//환자알림
+
+window.addEventListener('scroll', function () {
+    const hospital3 = document.querySelector('.hospital3');
+    const hospitalElements = document.querySelectorAll('.hospital3 .hos3 img');
+    const rectHospital3 = hospital3.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+
+    // hospital3가 뷰포트의 30%에 도달했을 때
+    if (rectHospital3.top <= windowHeight * 0.7 && rectHospital3.bottom >= 0) {
+        hospitalElements.forEach((el, index) => {
+            const delay = index * 0.3; // 각 요소에 대한 지연 시간 설정 (0.6초씩 증가)
+            el.style.transitionDelay = `${delay}s`;
+            el.classList.add("visible");
+        });
+    } else {
+        hospitalElements.forEach(el => {
+            el.classList.remove("visible");
+            el.style.transitionDelay = '0s';
+        });
+    }
+});
+
+
+
+//소스 버튼
+
+const toggleButton = document.getElementById('source');
+const content = document.getElementById('source-url');
+
+toggleButton.addEventListener('click', () => {
+    if (content.style.display === 'none' || content.style.display === '') {
+        content.style.display = 'block'; // 내용 보이기
+        toggleButton.textContent = '> SOURCE'; // 버튼 텍스트 변경
+    } else {
+        content.style.display = 'none'; // 내용 숨기기
+        toggleButton.textContent = '> SOURCE'; // 버튼 텍스트 변경
+    }
+});
+
+
+//div scroll
+
+document.addEventListener('DOMContentLoaded', function () {
+    const sections = document.querySelectorAll('.divScroll');
+
+    const revealSection = () => {
+        const viewportHeight = window.innerHeight;
+        sections.forEach(section => {
+            const sectionTop = section.getBoundingClientRect().top;
+            if (sectionTop < viewportHeight - 150) { // 섹션이 뷰포트의 150px 위에 도달하면
+                section.classList.add('show');
             } else {
-                content.style.display = 'none'; // 내용 숨기기
-                toggleButton.textContent = '> SOURCE'; // 버튼 텍스트 변경
+                section.classList.remove('show'); // 스크롤을 올릴 때 다시 숨김
             }
         });
+    };
+
+    window.addEventListener('scroll', revealSection);
+});
 
 
-            //div scroll
+//네비 영상 재생
 
-    document.addEventListener('DOMContentLoaded', function () {
-        const sections = document.querySelectorAll('.divScroll');
-
-        const revealSection = () => {
-            const viewportHeight = window.innerHeight;
-            sections.forEach(section => {
-                const sectionTop = section.getBoundingClientRect().top;
-                if (sectionTop < viewportHeight - 150) { // 섹션이 뷰포트의 150px 위에 도달하면
-                    section.classList.add('show');
-                } else {
-                    section.classList.remove('show'); // 스크롤을 올릴 때 다시 숨김
-                }
-            });
-        };
-
-        window.addEventListener('scroll', revealSection);
-    });
-
-
-    //네비 영상 재생
-
-    // 네비게이션 비디오 컨트롤
-document.addEventListener('DOMContentLoaded', function() {
+// 네비게이션 비디오 컨트롤
+document.addEventListener('DOMContentLoaded', function () {
     const navVideo = document.getElementById('navVideo');
     if (!navVideo) return;
 
@@ -688,12 +688,12 @@ document.addEventListener('DOMContentLoaded', function() {
     observer.observe(document.getElementById('navMain'));
 
     // 비디오 메타데이터 로드 완료 시 자동재생 시작
-    navVideo.addEventListener('loadedmetadata', function() {
+    navVideo.addEventListener('loadedmetadata', function () {
         navVideo.play();
     });
 
     // 에러 처리
-    navVideo.addEventListener('error', function(e) {
+    navVideo.addEventListener('error', function (e) {
         console.error('Navigation video error:', e);
     });
 });

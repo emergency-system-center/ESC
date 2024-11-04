@@ -1,15 +1,16 @@
-.serviceS{
+.serviceS {
     margin-bottom: 6rem;
 }
 
 .paramedic0 {
     display: flex;
     border-radius: 20px;
-    width: 100%; 
+    width: 100%;
     margin-bottom: 13rem;
 }
 
-.paramedic1, .paramedic2 {
+.paramedic1,
+.paramedic2 {
     flex-basis: 50%;
     display: grid;
 }
@@ -30,13 +31,13 @@
     margin-left: 1vw;
 }
 
-.paramedic1-1{
+.paramedic1-1 {
     grid-column: span 1;
     grid-row: span 1;
     border-radius: 20px;
 }
 
-.paramedic1-2{
+.paramedic1-2 {
     grid-column: span 1;
     grid-row: span 4;
     background-color: #E0FD48;
@@ -47,11 +48,11 @@
     padding: 2rem;
 }
 
-.paramedic1-2 video{
+.paramedic1-2 video {
     width: 70%;
 }
 
-.paramedic1-3{
+.paramedic1-3 {
     grid-column: span 1;
     grid-row: span 1;
     background-color: black;
@@ -63,13 +64,13 @@
     padding: 1rem;
 }
 
-.paramedic1-3 video{
+.paramedic1-3 video {
     width: 100%;
     margin-top: 0.5rem;
     background-color: #0000;
 }
 
-.paramedic1-4{
+.paramedic1-4 {
     grid-column: span 1;
     grid-row: span 2;
     background-color: #1e1e1e;
@@ -80,9 +81,9 @@
     justify-content: center;
 }
 
-.paramedic1-5{
+.paramedic1-5 {
     grid-column: span 1;
-    grid-row: span 4;
+    grid-row: span 3;
     background-color: black;
     border: solid 2px #E0FD48;
     border-radius: 20px;
@@ -93,11 +94,48 @@
     align-items: center;
 }
 
-.paramedic1-5 video{
+.paramedic1-5 video {
     width: 80%;
 }
 
-.paramedic2-1{
+.paramedic1-6 {
+    grid-column: span 1;
+    grid-row: span 1;
+    background-color: #E0FD48;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.parColor0 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: black;
+}
+
+.parKey {
+    display: flex;
+    padding: 0.5rem 1rem;
+    background-color: #1e1e1e;
+    color: #E0FD48;
+    border-radius: 20px;
+    margin-top: 1rem;
+    font-weight: 400;
+}
+
+.parMiddle {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.parTxt {
+    font-size: 1.05rem;
+}
+
+
+.paramedic2-1 {
     grid-column: span 1;
     grid-row: span 1;
     background-color: #1e1e1e;
@@ -108,11 +146,11 @@
     padding: 2rem;
 }
 
-.paramedic2-1 img{
+.paramedic2-1 img {
     width: 90%;
 }
 
-.paramedic2-2{
+.paramedic2-2 {
     grid-column: span 1;
     grid-row: span 1;
     background-color: #212121;
@@ -122,11 +160,11 @@
     align-items: center;
 }
 
-.paramedic2-2 video{
+.paramedic2-2 video {
     width: 70%;
 }
 
-.paramedic2-3{
+.paramedic2-3 {
     grid-column: span 1;
     grid-row: span 3;
     background-color: #1e1e1e;
@@ -138,22 +176,22 @@
     align-items: center;
 }
 
-.paramedic2-3 p{
+.paramedic2-3 p {
     align-self: flex-start;
     justify-self: flex-start;
     margin-left: 4rem;
     margin-bottom: 4rem;
 }
 
-.paramedic2-3 img{
+.paramedic2-3 img {
     width: 80%;
 }
 
-.par4{
+.par4 {
     margin-left: 4rem;
 }
 
-.circleP{
+.circleP {
     background-color: #E0FD48;
     width: 25px;
     height: 25px;
@@ -166,26 +204,28 @@
 
 }
 
-.par4-1, .par4-2{
+.par4-1,
+.par4-2 {
     margin-bottom: 2rem;
 }
 
-.paramedic0-1Txt{
+.paramedic0-1Txt {
     margin-bottom: 3rem;
 }
 
-.paramedic0-1 .parCheck div{
+.paramedic0-1 .parCheck div {
     opacity: 0;
     transform: translateX(-50rem);
     transition: opacity .7s ease-out, transform .7s ease-out;
 }
+
 .paramedic0-1 .parCheck div.visible {
-    opacity: 1; 
+    opacity: 1;
     transform: translateX(0rem);
 }
 
-.parCheck{
-    display:grid;
+.parCheck {
+    display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 2vw;
@@ -198,7 +238,7 @@
 .parCheck::before {
     content: '';
     position: absolute;
-    top: 0%; 
+    top: 0%;
     left: -10%;
     right: 0%;
     bottom: -50%;
@@ -206,15 +246,15 @@
     background-repeat: no-repeat;
     background-position: left;
     background-size: 50%;
-    z-index: -1; 
-    border-radius: 20px; 
+    z-index: -1;
+    border-radius: 20px;
 }
 
-.parCheck img{
+.parCheck img {
     width: 100%;
 }
 
-.parCheck1{
+.parCheck1 {
     grid-column: span 1;
     grid-row: span 1;
     background-color: #1e1e1e;
@@ -226,7 +266,7 @@
 
 }
 
-.parCheck2{
+.parCheck2 {
     grid-column: span 1;
     grid-row: span 1;
     background-color: #1e1e1e;
@@ -238,7 +278,7 @@
 
 }
 
-.parCheck3{
+.parCheck3 {
     grid-column: span 1;
     grid-row: span 1;
     background-color: #1e1e1e;
@@ -249,30 +289,19 @@
     align-items: center;
 }
 
-.parCheck4{
+.parCheck4 {
     grid-column: span 1;
     grid-row: span 1;
     border-radius: 20px;
 }
 
-.parCheck5{
+.parCheck5 {
     grid-column: span 1;
     grid-row: span 1;
     border-radius: 20px;
 }
 
-.parCheck6{
-    grid-column: span 1;
-    grid-row: span 1;
-    background-color: #1e1e1e;
-    border: solid 2px #E0FD48;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.parCheck7{
+.parCheck6 {
     grid-column: span 1;
     grid-row: span 1;
     background-color: #1e1e1e;
@@ -283,7 +312,7 @@
     align-items: center;
 }
 
-.parCheck8{
+.parCheck7 {
     grid-column: span 1;
     grid-row: span 1;
     background-color: #1e1e1e;
@@ -294,19 +323,7 @@
     align-items: center;
 }
 
-.parCheck9{
-    grid-column: span 1;
-    grid-row: span 1;
-    border-radius: 20px;
-}
-
-.parCheck10{
-    grid-column: span 1;
-    grid-row: span 1;
-    border-radius: 20px;
-}
-
-.parCheck11{
+.parCheck8 {
     grid-column: span 1;
     grid-row: span 1;
     background-color: #1e1e1e;
@@ -317,7 +334,19 @@
     align-items: center;
 }
 
-.parCheck12{
+.parCheck9 {
+    grid-column: span 1;
+    grid-row: span 1;
+    border-radius: 20px;
+}
+
+.parCheck10 {
+    grid-column: span 1;
+    grid-row: span 1;
+    border-radius: 20px;
+}
+
+.parCheck11 {
     grid-column: span 1;
     grid-row: span 1;
     background-color: #1e1e1e;
@@ -328,7 +357,18 @@
     align-items: center;
 }
 
-.paramedic0-2Txt{
+.parCheck12 {
+    grid-column: span 1;
+    grid-row: span 1;
+    background-color: #1e1e1e;
+    border: solid 2px #E0FD48;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paramedic0-2Txt {
     width: 100%;
     overflow: hidden;
     display: flex;
@@ -336,32 +376,33 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 24rem;
-    
+
 }
 
-.paramedic0-2Txt p{
+.paramedic0-2Txt p {
     margin-bottom: 3rem;
     align-self: flex-start;
 }
 
-.paramedic0-2Txt video{
-   width: 120%;
-   
+.paramedic0-2Txt video {
+    width: 120%;
+
 }
 
-.paramedic0-3{
+.paramedic0-3 {
     margin-bottom: 13rem;
 }
 
-.hospital{
+.hospital {
     display: flex;
     border-radius: 20px;
-    width: 100%; 
+    width: 100%;
     margin-bottom: 13rem;
 }
 
-.hospital1, .hospital2 {
-    flex-basis: 50%; 
+.hospital1,
+.hospital2 {
+    flex-basis: 50%;
     display: grid;
 }
 
@@ -381,7 +422,7 @@
     margin-left: 1vw;
 }
 
-.hospital1-1{
+.hospital1-1 {
     grid-column: span 1;
     grid-row: span 1;
     border-radius: 20px;
@@ -393,19 +434,19 @@
 .hospital1-1::before {
     content: '';
     position: absolute;
-    top: -300%; 
+    top: -300%;
     left: 0%;
     right: -20%;
     bottom: -300%;
     background-image: url('../img/hosBg.svg');
     background-repeat: no-repeat;
-    background-position: center ;
+    background-position: center;
     background-size: 80%;
-    z-index: -1; 
-    border-radius: 20px; 
+    z-index: -1;
+    border-radius: 20px;
 }
 
-.hospital1-2{
+.hospital1-2 {
     grid-column: span 1;
     grid-row: span 3;
     background-color: #212121;
@@ -416,17 +457,17 @@
     padding: 2rem;
 }
 
-.hospital1-2 video{
+.hospital1-2 video {
     width: 65%;
     margin: 0;
     padding: 0;
 }
 
-.hospital1-3 img{
+.hospital1-3 img {
     width: 70%;
 }
 
-.hospital1-3{
+.hospital1-3 {
     grid-column: span 1;
     grid-row: span 3;
     background-color: #1e1e1e;
@@ -439,20 +480,20 @@
     text-align: left;
 }
 
-.hospital1-3 p{
+.hospital1-3 p {
     align-self: flex-start;
     margin-left: 6rem;
 }
 
-.hospital1-3 .service-sub2{
+.hospital1-3 .service-sub2 {
     margin-bottom: 1rem;
 }
 
-.hospital1-3 .service-sub{
+.hospital1-3 .service-sub {
     margin-bottom: 3rem;
 }
 
-.hospital2-1{
+.hospital2-1 {
     grid-column: span 1;
     grid-row: span 4;
     background-color: #212121;
@@ -461,32 +502,75 @@
     justify-content: center;
     align-items: center;
     padding: 2rem;
-    
+
 }
 
-.hospital2-1 video{
+.hospital2-1 video {
     width: 80%;
 }
 
-.hospital2-2{
+.hospital2-2 {
     grid-column: span 1;
     grid-row: span 2;
     background-color: #ff3e3e;
     border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 2rem;
 }
 
-.hospital3 .hos3 img{
+.hosColor0 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+}
+
+.hosKey {
+    display: flex;
+    padding: 0.5rem 1rem;
+    background-color: white;
+    color: #ff3e3e;
+    border-radius: 20px;
+    margin-top: 1rem;
+    font-weight: 500;
+}
+
+.hosMiddle {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.hosTxt {
+    font-size: 1.05rem;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hospital3 .hos3 img {
     opacity: 0;
     transform: translateZ(-9.7rem);
     transition: opacity 0.7s ease-out, transform 0.7s ease-out;
 }
 
-.hospital3 .hos3 img.visible{
+.hospital3 .hos3 img.visible {
     opacity: 1;
     transform: translateZ(0rem);
 }
 
-.hospital3{
+.hospital3 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2vw;
@@ -494,7 +578,7 @@
     margin-bottom: 13rem;
 }
 
-.hos3{
+.hos3 {
     grid-column: span 1;
     grid-row: span 1;
     border-radius: 20px;
@@ -504,15 +588,15 @@
     overflow: hidden;
 }
 
-.hos3 img{
-    width:120%;
+.hos3 img {
+    width: 120%;
 }
 
-.hos3Txt{
+.hos3Txt {
     margin-bottom: 3rem;
 }
 
-.hospital4{
+.hospital4 {
     margin-bottom: 13rem;
     display: flex;
     flex-direction: column;
@@ -520,7 +604,7 @@
     align-items: center;
 }
 
-.hospital4 p{
+.hospital4 p {
     align-self: flex-start;
     margin-bottom: 3rem;
 }
@@ -529,11 +613,11 @@
     width: 60%;
 }
 
-.hospital4 .service-main{
+.hospital4 .service-main {
     margin-bottom: 2rem;
 }
 
-.hos4C{
+.hos4C {
     width: 100%;
     background-color: #0e0e0e;
     border-radius: 50px;
@@ -543,7 +627,7 @@
     align-items: center;
 }
 
-.service00{
+.service00 {
     margin-bottom: 13rem;
     display: flex;
     flex-direction: column;
@@ -551,7 +635,7 @@
     align-items: center;
 }
 
-.service00 p{
+.service00 p {
     align-self: flex-start;
     margin-bottom: 3rem;
 }
@@ -562,11 +646,11 @@
     border-radius: 50px;
 }
 
-.service00 .service-main{
+.service00 .service-main {
     margin-bottom: 2rem;
 }
 
-.serviceV{
+.serviceV {
     width: 100%;
     background-color: #0e0e0e;
     border-radius: 50px;
@@ -586,14 +670,14 @@
     margin-bottom: 13rem;
 }
 
-.citizen1-1{
+.citizen1-1 {
     grid-column: span 1;
     grid-row: span 1;
     border-radius: 20px;
 }
 
 
-.citizen1-2{
+.citizen1-2 {
     grid-column: span 1;
     grid-row: span 4;
     border-radius: 20px;
@@ -605,11 +689,11 @@
     justify-content: center;
     align-items: center;
     background-position: left;
-    background-size: 80%; 
-    background-repeat: no-repeat; 
+    background-size: 80%;
+    background-repeat: no-repeat;
 }
 
-.citizen1-3{
+.citizen1-3 {
     grid-column: span 1;
     grid-row: span 1;
     background-color: #1e1e1e;
@@ -619,11 +703,11 @@
     align-items: center;
 }
 
-.citizen1-3 img{
+.citizen1-3 img {
     width: 70%;
 }
 
-.citizen1-4{
+.citizen1-4 {
     grid-column: span 1;
     grid-row: span 2;
     background-color: #1e1e1e;
@@ -634,29 +718,30 @@
     padding: 2rem;
 }
 
-.citizen1-4 img{
+.citizen1-4 img {
     width: 70%;
 }
 
-.citizen3{
+.citizen3 {
     margin-bottom: 13rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.citizen3 p{
+
+.citizen3 p {
     margin-bottom: 3rem;
     align-self: flex-start;
 }
 
-.citizen3 video{
+.citizen3 video {
     width: 80%;
     background-color: #0e0e0e;
     border-radius: 50px;
 }
 
-.citizen3C{
+.citizen3C {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -665,7 +750,7 @@
     width: 100%;
 }
 
-.citizen4{
+.citizen4 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -674,7 +759,7 @@
     margin-bottom: 13rem;
 }
 
-.citizen4-1{
+.citizen4-1 {
     grid-column: span 1;
     grid-row: span 2;
     background-color: #1e1e1e;
@@ -682,11 +767,11 @@
     padding: 2rem;
 }
 
-.citizen4-1 img{
+.citizen4-1 img {
     width: 90%;
 }
 
-.citizen4-2{
+.citizen4-2 {
     grid-column: span 1;
     grid-row: span 3;
     background-color: #1e1e1e;
@@ -697,23 +782,64 @@
     justify-content: center;
     gap: 2vw;
 }
-.citizen4-3{
+
+.citizen4-3 {
     grid-column: span 1;
     grid-row: span 1;
     background-color: #0177FF;
     aspect-ratio: 3/1;
     border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 2rem;
 }
 
-.citizen4Txt .service-main{
+.cityColor0 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+}
+
+.cityKey {
+    display: flex;
+    padding: 0.5rem 1rem;
+    background-color: white;
+    color: #0177FF;
+    border-radius: 20px;
+    margin-top: 1rem;
+    font-weight: 500;
+}
+
+.cityMiddle {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.cityTxt {
+    font-size: 1.05rem;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+.citizen4Txt .service-main {
     margin-bottom: 3rem;
 }
 
-.citizen4-1 .service-sub2{
+.citizen4-1 .service-sub2 {
     margin-bottom: 3rem;
 }
 
-.city4-1div{
+.city4-1div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -726,11 +852,11 @@
     color: white;
 }
 
-.city4-1div:hover{
+.city4-1div:hover {
     background-color: #0177FF;
 }
 
-.city4-1div1{
+.city4-1div1 {
     margin-bottom: 3rem;
 }
 
@@ -745,8 +871,8 @@
     align-self: center;
 }
 
-.circle4-2{
-    width:30px;
+.circle4-2 {
+    width: 30px;
     height: 30px;
     border-radius: 50px;
     background-color: #0177FF;
@@ -760,11 +886,10 @@
     margin-left: 3rem;
 }
 
-.city4-2div:hover{
+.city4-2div:hover {
     background-color: #0177FF;
-    
-    .circle4-2{
+
+    & .circle4-2 {
         background-color: #101010;
     }
 }
-

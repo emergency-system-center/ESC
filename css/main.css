@@ -13,26 +13,26 @@ body {
     margin: 0;
     padding: 0;
     background-color: #101010;
-    font-size: 16px; 
+    font-size: 16px;
     overflow-x: hidden;
-    cursor: url('../img/cursor.svg'), auto; 
+    cursor: url('../img/cursor.svg'), auto;
 }
 
-.container{
-    width:73%;
-    margin:0 auto;
+.container {
+    width: 73%;
+    margin: 0 auto;
     position: relative;
 }
 
 .divScroll {
-    opacity: 0;  
-    transform: translateY(50px);  
+    opacity: 0;
+    transform: translateY(50px);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
 .divScroll.show {
     opacity: 1;
-    transform: translateY(0); 
+    transform: translateY(0);
 }
 
 
@@ -45,12 +45,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #E0FD48; 
-    border-radius: 10px; 
+    background: #E0FD48;
+    border-radius: 10px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #1e1e1e;  
+    background: #1e1e1e;
 }
 
 ::-webkit-scrollbar:horizontal {
@@ -72,7 +72,7 @@ header {
     right: 0;
     margin: 0 auto;
     width: 73%;
-    gap: 20px; 
+    gap: 20px;
     transition: top 0.2s ease-in-out;
 
 }
@@ -84,10 +84,12 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: rgba(105, 105, 105, 0.5); /* 배경 색상 설정 */
+    background-color: rgba(105, 105, 105, 0.5);
+    /* 배경 색상 설정 */
     backdrop-filter: blur(5px);
     border-radius: 10px;
-    gap: 1rem; /* 메뉴 항목 간의 간격 추가 */
+    gap: 1rem;
+    /* 메뉴 항목 간의 간격 추가 */
 }
 
 nav ul li a {
@@ -105,18 +107,18 @@ nav ul li a:hover {
 
 /*--FOOTER--*/
 
-footer{
+footer {
     background-color: #E0FD48;
-    color:black;
+    color: black;
     height: 20vw;
     display: flex;
     align-items: center;
-    border-top-left-radius: 40px;  
-    border-top-right-radius: 40px;  
-    border-bottom-left-radius: 0;  
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     position: relative;
-    z-index: 1; 
+    z-index: 1;
 }
 
 
@@ -125,7 +127,7 @@ footer{
 }
 
 
-.footer1{
+.footer1 {
     display: flex;
     justify-content: space-between;
 }
@@ -138,22 +140,22 @@ footer{
     font-weight: 700;
 }
 
-.footerLogo{
+.footerLogo {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.footerLogo a{
+.footerLogo a {
     text-decoration: none;
-    color:white;
+    color: white;
 }
 
-.logoF img{
+.logoF img {
     width: 15%;
 }
 
-.profileAll{
+.profileAll {
     display: flex;
     justify-content: flex-end;
 }
@@ -163,8 +165,8 @@ footer{
     margin: 0 auto;
 }
 
-.profileAll img{
-    width:70%;
+.profileAll img {
+    width: 70%;
     margin-bottom: 1rem;
 }
 
@@ -173,41 +175,41 @@ footer{
     margin-left: 2rem;
 }
 
-.name{
+.name {
     margin-bottom: 0.5rem;
     font-weight: 500;
     font-size: 1.1rem;
 }
 
-.portfolio{
+.portfolio {
     font-weight: 400;
     font-size: 0.8rem;
 }
 
-.portfolio a{
+.portfolio a {
     text-decoration: none;
-    color:white;
+    color: white;
 }
 
-.white{
-    font-family: Pretendard,'sans-serif';
+.white {
+    font-family: Pretendard, 'sans-serif';
     font-size: 1.3rem;
     font-weight: 500;
-    color:white;
+    color: white;
 }
 
-.black{
-    font-family: Pretendard,'sans-serif';
+.black {
+    font-family: Pretendard, 'sans-serif';
     font-size: 1.3rem;
     font-weight: 500;
-    color:black;
+    color: black;
 }
 
 
 /*--TITLE/SUB TEXT--*/
 
 
-.con1{
+.con1 {
     font-family: Conthrax, 'sans-serif';
     font-size: 3rem;
     color: #E0FD48;
@@ -215,16 +217,16 @@ footer{
     padding: 0;
 }
 
-.con1-1{
+.con1-1 {
     font-family: Conthrax, 'sans-serif';
     font-size: 2.5rem;
     line-height: 3rem;
-    color:white;
+    color: white;
     margin: 0;
     padding: 0;
 }
 
-.pre1{
+.pre1 {
     font-family: Pretendard, 'sans-serif';
     font-size: 1.2rem;
     line-height: 2rem;
@@ -233,7 +235,7 @@ footer{
 }
 
 
-.con2{
+.con2 {
     font-family: Conthrax, 'sans-serif';
     font-size: 6rem;
     color: #E0FD48;
@@ -241,7 +243,7 @@ footer{
     padding: 1rem;
 }
 
-.con3{
+.con3 {
     font-family: Conthrax, 'sans-serif';
     font-size: 3rem;
     color: #000000;
@@ -250,7 +252,7 @@ footer{
     margin-bottom: 0;
 }
 
-.pre2{
+.pre2 {
     font-family: Pretendard, 'sans-serif';
     font-size: 1rem;
     font-weight: 700;
@@ -260,7 +262,7 @@ footer{
     margin-bottom: 1.7rem;
 }
 
-.pre3{
+.pre3 {
     font-family: Pretendard, 'sans-serif';
     font-size: 1rem;
     color: #000000;
@@ -268,7 +270,7 @@ footer{
     margin-top: 1rem;
 }
 
-.con4{
+.con4 {
     font-family: Conthrax, 'sans-serif';
     font-size: 2.2rem;
     color: #000000;
@@ -277,7 +279,7 @@ footer{
     margin-bottom: 0;
 }
 
-.con5{
+.con5 {
     font-family: Conthrax, 'sans-serif';
     font-size: 2.2rem;
     color: #ffffff;
@@ -287,7 +289,7 @@ footer{
 
 }
 
-.pre5{
+.pre5 {
     font-family: Pretendard, 'sans-serif';
     font-size: 1rem;
     color: #ffffff;
@@ -295,17 +297,17 @@ footer{
     margin-top: 1rem;
 }
 
-.pre6{
+.pre6 {
     font-family: Pretendard, 'sans-serif';
     font-size: 1.7rem;
-    font-weight:700;
+    font-weight: 700;
     color: #000000;
     margin-left: 2rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
 
-.pre7{
+.pre7 {
     font-family: Pretendard, 'sans-serif';
     font-size: 1.5rem;
     color: #000000;
@@ -313,7 +315,8 @@ footer{
     margin-top: 0;
     margin-bottom: 1rem;
 }
-.pre7-1{
+
+.pre7-1 {
     font-family: Pretendard, 'sans-serif';
     font-size: 1.5rem;
     font-weight: 100;
@@ -322,7 +325,8 @@ footer{
     margin-top: 0;
     margin-bottom: 1rem;
 }
-.pre7-2{
+
+.pre7-2 {
     font-family: Pretendard, 'sans-serif';
     font-size: 1.5rem;
     font-weight: 500;
@@ -332,7 +336,7 @@ footer{
     margin-bottom: 1rem;
 }
 
-.pre7-3{
+.pre7-3 {
     font-family: Pretendard, 'sans-serif';
     font-size: 1.5rem;
     font-weight: 700;
@@ -342,7 +346,7 @@ footer{
     margin-bottom: 1rem;
 }
 
-.con6{
+.con6 {
     font-family: Conthrax, 'sans-serif';
     font-size: 2rem;
     color: #000000;
@@ -351,7 +355,7 @@ footer{
     margin-bottom: 2rem;
 }
 
-.con7{
+.con7 {
     font-family: Conthrax, 'sans-serif';
     font-size: 2rem;
     color: #000000;
@@ -364,7 +368,7 @@ footer{
 /*--FOOTER--*/
 
 
-.con8{
+.con8 {
     font-family: Conthrax, 'sans-serif';
     font-size: 4rem;
     color: #000000;
@@ -373,25 +377,25 @@ footer{
 }
 
 .footerLogo a {
-    color:#000000;
+    color: #000000;
 }
 
-.con9{
+.con9 {
     font-family: Conthrax, 'sans-serif';
     font-size: 1.1rem;
     color: #E0FD48;
     margin-left: 4.8rem;
-    margin-bottom:3rem;
+    margin-bottom: 3rem;
     margin-top: 0;
 }
 
-.pre8{
+.pre8 {
     margin-bottom: 0;
     font-size: 0.95rem;
-    color:#000000;
+    color: #000000;
 }
 
-.mainTxt{
+.mainTxt {
     font-family: Conthrax, 'sans-serif';
     font-size: 5.5rem;
     color: #000000;
@@ -400,24 +404,24 @@ footer{
     margin-bottom: 0;
 }
 
-.hk{
+.hk {
     font-family: Conthrax, 'sans-serif';
     font-size: 1rem;
     color: #ffffff;
     margin: 0.5rem 0;
 }
 
-.hkC{
+.hkC {
     font-family: Conthrax, 'sans-serif';
     font-size: 1.2rem;
     color: #ffffff;
 }
 
-.top{
+.top {
     font-size: 1rem;
 }
 
-.main-sub{
+.main-sub {
     font-family: Pretendard, 'sans-serif';
     font-size: 1.5rem;
     font-weight: 500;
@@ -434,7 +438,7 @@ footer{
     line-height: 3.2rem;
 }
 
-.aiT{
+.aiT {
     font-family: Conthrax, 'sans-serif';
     font-size: 2.2rem;
     font-weight: 600;
@@ -444,7 +448,7 @@ footer{
     line-height: 3.2rem;
 }
 
-.tabC{
+.tabC {
     font-family: Conthrax, 'sans-serif';
     font-size: 1.7rem;
     color: #000000;
@@ -499,7 +503,7 @@ footer{
     font-weight: 600;
 }
 
-.perC{
+.perC {
     font-family: Conthrax, 'sans-serif';
     font-size: 1.7rem;
     color: #ffffff;
@@ -508,7 +512,7 @@ footer{
     margin-bottom: 3rem;
 }
 
-.perP{
+.perP {
     font-family: Pretendard, 'sans-serif';
     font-size: 1.05rem;
     color: #ffffff;
@@ -518,7 +522,7 @@ footer{
     line-height: 2rem;
 }
 
-.perP1{
+.perP1 {
     font-family: Pretendard, 'sans-serif';
     font-size: 1.05rem;
     color: #ffffff;
@@ -528,7 +532,7 @@ footer{
     line-height: 2rem;
 }
 
-.perBold{
+.perBold {
     font-family: Pretendard, 'sans-serif';
     font-size: 1.3rem;
     /* color: #ffffff; */
@@ -539,7 +543,7 @@ footer{
     line-height: 2rem;
 }
 
-.sv2{
+.sv2 {
     font-family: Pretendard, 'sans-serif';
     font-size: 1rem;
     color: white;
@@ -548,11 +552,11 @@ footer{
     font-weight: 300;
 }
 
-.sv2-3T{
+.sv2-3T {
     color: black;
 }
 
-.service-main{
+.service-main {
     font-family: Pretendard, 'sans-serif';
     font-size: 2.2rem;
     /* color: #ffffff; */
@@ -564,7 +568,7 @@ footer{
 }
 
 
-.service-sub{
+.service-sub {
     font-family: Pretendard, 'sans-serif';
     font-size: 1.2rem;
     margin: 0;
@@ -574,7 +578,7 @@ footer{
     font-weight: 300;
 }
 
-.service-sub2{
+.service-sub2 {
     font-family: Pretendard, 'sans-serif';
     font-size: 1.8rem;
     margin: 0;
@@ -584,11 +588,11 @@ footer{
     font-weight: 600;
 }
 
-.number{
+.number {
     font-family: Conthrax, 'sans-serif';
     font-size: 2rem;
     color: #000000;
-    margin:0;
+    margin: 0;
     padding: 0;
 }
 
@@ -599,12 +603,24 @@ footer{
     color: white;
 } */
 
-.namingT2{
+.namingT2 {
     font-family: Conthrax, 'sans-serif';
     background-color: #1e1e1e;
-    padding:0.5rem 1rem;
+    padding: 0.5rem 1rem;
     border-radius: 50px;
     color: #E0FD48;
     font-size: 1.5rem;
     font-weight: 500;
+}
+
+.color {
+    font-family: Conthrax, 'sans-serif';
+    color: black;
+    font-size: 1.5rem;
+}
+
+.color0 {
+    font-family: Conthrax, 'sans-serif';
+    color: white;
+    font-size: 1.5rem;
 }

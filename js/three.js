@@ -44,8 +44,8 @@ function setupScene(containerId, objPath, sceneKey, {
     // OBJ 로더 설정
     const objLoader = new THREE.OBJLoader();
     objLoader.setPath('3d/');
-    objLoader.load(objPath, function(object) {
-        object.traverse(function(child) {
+    objLoader.load(objPath, function (object) {
+        object.traverse(function (child) {
             if (child instanceof THREE.Mesh) {
                 child.material = material;
             }

@@ -1,4 +1,4 @@
-const paramedicElements = document.querySelectorAll('.paramedic1-2, .paramedic1-3, .paramedic1-4, .paramedic1-5 ,.paramedic2-1, .paramedic2-2, .paramedic2-3, .paramedic2-4');
+const paramedicElements = document.querySelectorAll('.paramedic1-2, .paramedic1-6, .paramedic1-3, .paramedic1-4, .paramedic1-5 ,.paramedic2-1, .paramedic2-2, .paramedic2-3, .paramedic2-4');
 
 paramedicElements.forEach(element => {
     element.addEventListener('mouseenter', () => {
