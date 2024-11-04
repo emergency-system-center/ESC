@@ -13,9 +13,9 @@ body {
     margin: 0;
     padding: 0;
     background-color: #101010;
-    font-size: 16px; /* 1rem = 16px */
+    font-size: 16px; 
     overflow-x: hidden;
-    cursor: url('../img/cursor.svg'), auto; /* SVG 커서로 변경 */
+    cursor: url('../img/cursor.svg'), auto; 
 }
 
 .container{
@@ -24,16 +24,15 @@ body {
     position: relative;
 }
 
-
 .divScroll {
-    opacity: 0;  /* 처음에는 보이지 않게 설정 */
-    transform: translateY(50px);  /* 아래쪽으로 이동된 상태 */
+    opacity: 0;  
+    transform: translateY(50px);  
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
 .divScroll.show {
     opacity: 1;
-    transform: translateY(0);  /* 원래 위치로 이동 */
+    transform: translateY(0); 
 }
 
 
@@ -46,12 +45,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #E0FD48; /* 스크롤바 색상 */
-    border-radius: 10px; /* 스크롤바 둥근 테두리 */
+    background: #E0FD48; 
+    border-radius: 10px; 
 }
 
 ::-webkit-scrollbar-track {
-    background: #1e1e1e;  /*스크롤바 뒷 배경 색상*/
+    background: #1e1e1e;  
 }
 
 ::-webkit-scrollbar:horizontal {
@@ -73,12 +72,10 @@ header {
     right: 0;
     margin: 0 auto;
     width: 73%;
-    gap: 20px; /* 요소 간의 간격 추가 */
+    gap: 20px; 
     transition: top 0.2s ease-in-out;
 
 }
-
-
 
 nav ul {
     display: flex;
@@ -92,8 +89,6 @@ nav ul {
     border-radius: 10px;
     gap: 1rem; /* 메뉴 항목 간의 간격 추가 */
 }
-
-
 
 nav ul li a {
     text-decoration: none;
@@ -110,19 +105,18 @@ nav ul li a:hover {
 
 /*--FOOTER--*/
 
-
 footer{
     background-color: #E0FD48;
     color:black;
     height: 20vw;
     display: flex;
     align-items: center;
-    border-top-left-radius: 40px;   /* 왼쪽 위 둥근 모서리 */
-    border-top-right-radius: 40px;  /* 오른쪽 위 둥근 모서리 */
-    border-bottom-left-radius: 0;   /* 왼쪽 아래 모서리는 둥글지 않음 */
+    border-top-left-radius: 40px;  
+    border-top-right-radius: 40px;  
+    border-bottom-left-radius: 0;  
     border-bottom-right-radius: 0;
-        position: relative;
-    z-index: 1; /* 기본 z-index */
+    position: relative;
+    z-index: 1; 
 }
 
 
@@ -195,13 +189,6 @@ footer{
     color:white;
 }
 
-
-/*--FONT SYSTEM--*/
-/*--DESIGN--*/
-
-/*--SLIDER--*/
-
-
 .white{
     font-family: Pretendard,'sans-serif';
     font-size: 1.3rem;
@@ -246,9 +233,6 @@ footer{
 }
 
 
-/*--LOGO--*/
-
-
 .con2{
     font-family: Conthrax, 'sans-serif';
     font-size: 6rem;
@@ -256,9 +240,6 @@ footer{
     margin: 1rem;
     padding: 1rem;
 }
-
-
-/*--DESIGN SYSTEM--*/
 
 .con3{
     font-family: Conthrax, 'sans-serif';

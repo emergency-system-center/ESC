@@ -38,7 +38,7 @@ hospitalElements.forEach(element => {
     });
 });
 // 병원 블러처리 끝
-const citizenElements = document.querySelectorAll('.citizen1-3, .citizen1-4, .citizen2-1');
+const citizenElements = document.querySelectorAll('.citizen1-3, .citizen1-4, .citizen1-2');
 
 citizenElements.forEach(element => {
     element.addEventListener('mouseenter', () => {

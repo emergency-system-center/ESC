@@ -1,10 +1,11 @@
 /* 수정 응급구조사 블러 호버 */
+
 .paramedic1-2, .paramedic1-3, .paramedic1-4, .paramedic1-5, .paramedic2-1, .paramedic2-2, .paramedic2-3, .paramedic2-4 {
     transition: filter 0.3s ease;
 }
 .blurredper{
     filter: blur(.7rem);
-    /* transform: scale(0.95);    */
+    /* transform: scale(0.95); */
 }
 
 
@@ -20,6 +21,7 @@
 }
 /* 수정 응급구조사 블러 호버끝 */
 
+
 /* hospital 블러 처리 */
 .hospital1-2,
 .hospital1-3,
@@ -29,14 +31,10 @@
 }
 
 .blurredhosp {
-    filter: blur(.5rem); /* 블러 강도는 원하는 값으로 조정 가능 */
+    filter: blur(.5rem); 
     /* transform: scale(0.95); 약간 축소 */
 }
-/* 
-.hovered-item {
-    transform: scale(1.05); /* 호버 시 약간 확대
-    transition: transform 0.3s ease;
-} */
+
 .hospital1-2 video, .hospital1-3 img, .hospital2-1 video, .hospital2-2 img{
     max-width: 100%;
     transition: transform .3s linear;
@@ -46,8 +44,10 @@
 }
 
 /* 블러 처리 끝 */
+
+
 /* 시민 블러 처리 */
-.citizen1-3, .citizen1-4, .citizen2-1 {
+.citizen1-3, .citizen1-4, .citizen1-2 {
     transition: filter .3s ease;
 }
 
@@ -56,39 +56,39 @@
     transform: scale(0.95);
 }
 
-.citizen1-3 img, .citizen1-4 img, .citizen2-1 video{
+.citizen1-3 img, .citizen1-4 img, .citizen1-2 video{
     max-width: 100%;
     transition: transform .3s linear;
 }
 .citizen1-3:hover img, .citizen1-4:hover img{
     transform: scale(1.1);
 }
-.citizen2-1:hover video{
-    transform: scale(1);
+.citizen1-2:hover video{
+    transform: scale(1.05);
 }
 /* 시민 끝 */
+
+
 /* 네비 블러 */
 .device1 img, .device2 video, .device3 img, .device4 img{
     transition: filter .3s ease;
 }
 .blurreddev{
     filter: blur(.5rem);
-    /* transform: scale(0.95); */
+    transform: scale(0.95);
 }
 
 .device1 img, .device2 video, .device3 img, .device4 img{
     max-width: 100%;
     transition: transform .3s linear;
 }
-.device1:hover img, .device3:hover img, .device4:hover img{
+.device1:hover img, .device3:hover img{
     transform: scale(1.1);
 }
-.device2:hover video{
+.device2:hover video,  .device4:hover img{
     transform: scale(1);
 }
 /* 네비 블러 끝*/
-
-
 
 
 /* 텍스트 애니메이션 */

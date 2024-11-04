@@ -97,7 +97,7 @@
 #navMain{
     background-color: #E0fD48;
     border-radius: 20px;
-    margin-bottom: 12rem;
+    margin-bottom: 13rem;
     height: 60rem;
     display: flex;
     justify-content: center;
@@ -107,8 +107,6 @@
 #navMain video{
     width: 80%;
 }
-
-
 
 .device3 img{
     width: 70%;

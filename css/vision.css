@@ -2,23 +2,21 @@
 
 .persona1 .per {
     opacity: 0;
-    transform: translateX(-50px); /* 왼쪽에서 시작 */
+    transform: translateX(-50px); 
     transition: opacity 0.7s ease-out, transform 0.7s ease-out;
 }
 
 .persona1 .per.right {
-    transform: translateX(50px); /* 오른쪽에서 시작 */
+    transform: translateX(50px); 
 }
 
-/* 애니메이션 활성화 상태 */
 .persona1 .per.visible {
     opacity: 1;
-    transform: translateX(0); /* 원래 위치로 이동 */
+    transform: translateX(0);
 }
 
-
 .persona{
-    margin-bottom: 15rem;
+    margin-bottom: 13rem;
 }
 
 .persona1{
@@ -35,9 +33,9 @@
     border: 3px solid #E0FD48;
     background-color: #1e1e1e;
     background-image: url('../img/per1bg.svg');
-    background-size: 120%; /* 이미지가 요소 전체에 맞게 조정됩니다 */
-    background-position: center; /* 이미지가 중앙에 위치합니다 */
-    background-repeat: no-repeat; /* 이미지가 반복되지 않습니다 */
+    background-size: 120%; 
+    background-position: center; 
+    background-repeat: no-repeat; 
 }
 
 .per1-2{
@@ -69,9 +67,9 @@
     border: 3px solid #FF3E3E;
     background-color: #1e1e1e;
     background-image: url('../img/per2bg.svg');
-    background-size: 120%; /* 이미지가 요소 전체에 맞게 조정됩니다 */
-    background-position: center; /* 이미지가 중앙에 위치합니다 */
-    background-repeat: no-repeat; /* 이미지가 반복되지 않습니다 */
+    background-size: 120%; 
+    background-position: center; 
+    background-repeat: no-repeat; 
 }
 
 .per1-5{
@@ -81,9 +79,9 @@
     border: 3px solid #0177FF;
     background-color: #1e1e1e;
     background-image: url('../img/per3bg.svg');
-    background-size: 120%; /* 이미지가 요소 전체에 맞게 조정됩니다 */
-    background-position: center; /* 이미지가 중앙에 위치합니다 */
-    background-repeat: no-repeat; /* 이미지가 반복되지 않습니다 */
+    background-size: 120%; 
+    background-position: center; 
+    background-repeat: no-repeat; 
 }
 
 .per1-6{
@@ -105,13 +103,6 @@
     width: 7rem;             
     object-fit: contain;      
 }
-
-
-
-
-
-
-
 
 .persona2{
     display: grid;
@@ -172,10 +163,7 @@
 }
 
 
-
-
 /*NAMING*/
-
 
 @keyframes roundandround {
     to {
@@ -189,10 +177,9 @@
     }
 }
 
-
 .scene {
-    width: 37.5rem; /* 600px에 해당 */
-    height: 37.5rem; /* 600px에 해당 */
+    width: 37.5rem; 
+    height: 37.5rem; 
     margin-top: 2rem;
     perspective: 1000px;
 }
@@ -214,13 +201,13 @@
 }
 
 .ring {
-    /* 기존 스타일 유지 */
     opacity: 0;
 }
 
 li{
     list-style: none;
 }
+
 .ball .ring {
     position: absolute;
     top: 0;
@@ -350,8 +337,6 @@ li{
     animation-delay: 0s;
 }
 
-/*아코디언 슬라이더*/
-
 .problem-solve {
     width: 100%;
     position: relative;
@@ -366,7 +351,7 @@ li{
     width: 100%;
     display: flex;
     gap: 2rem;
-    margin-bottom: 15rem;
+    margin-bottom: 13rem;
 }
 
 .tab {
@@ -382,8 +367,6 @@ li{
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    /*aspect-ratio: 1 / 2;*/
-
 }
 
 .tab img {
@@ -421,7 +404,6 @@ li{
     line-height: 1.7rem;
 }
 
-/* Hover Effects */
 .tab:hover {
     flex: 3;
     border: 3px solid #E0FD48;
@@ -440,8 +422,6 @@ li{
     opacity: 0;
 }
 
-/*그래서 우리는 통합 서비스를 개발함*/
-
 .service-value1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -455,7 +435,6 @@ li{
     grid-row: span 1;
     background-color: #1e1e1e;
     border-radius: 20px;
-    /*aspect-ratio: 1 / 1.5;*/
     padding: 2.5rem;
     display: flex;
     flex-direction: column;
@@ -463,23 +442,22 @@ li{
     line-height: 1.8rem;
     font-size: 1rem;
     font-weight: 300;
-      /* 추가 시작 */
-      opacity: 0; /* 초기 투명도 0 */
-      transform: translateX(-100%); /* 초기 위치 */
-      transition: opacity 0.5s ease, transform 0.5s ease; /* 부드러운 전환 효과 */
+     
+    opacity: 0; 
+    transform: translateX(-100%); 
+    transition: opacity 0.5s ease, transform 0.5s ease; 
   }
   
   .sv.visible {
-    opacity: 1; /* 보이게 설정 */
-    transform: translateX(0); /* 원래 위치로 이동 */
+    opacity: 1; 
+    transform: translateX(0); 
 }
-/* 추가 끝 */
 
 .service-value2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2vw;
-    margin-bottom: 15rem;
+    margin-bottom: 13rem;
 }
 
 .svImgTxt{
@@ -504,7 +482,6 @@ li{
     height: 47rem;
 }
 
-
 .sv2-2 {
     grid-column: span 2;
     grid-row: span 1;
@@ -526,10 +503,9 @@ li{
 .sv2-1 {
     grid-column: span 1;
     grid-row: span 2;
-    position: relative; /* 부모 요소에 relative 설정 */
+    position: relative; 
     background-color: #1e1e1e;
     border-radius: 20px;
-    /* aspect-ratio: 1 / 2; */
     overflow: hidden;
     padding: 2rem;
 }
@@ -541,7 +517,7 @@ li{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: 0; /* 배경이 뒤에 위치 */
+    z-index: 0; 
     opacity: 0.5;
 }
 
@@ -551,17 +527,17 @@ li{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.3); /* 검정색 반투명 */
-    backdrop-filter: blur(2px); 블러 효과
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(2px); 
     z-index: 1;
 }
 
 
 .sv2-1Front {
-    position: relative; /* svBg 위에 쌓이도록 설정 */
-    z-index: 2; /* 앞쪽에 위치 */
-    padding: 1rem; /* 원하는 만큼 padding 추가 */
-    color: white; /* 텍스트 색상 설정 */
+    position: relative; 
+    z-index: 2; 
+    padding: 1rem; 
+    color: white; 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -577,64 +553,28 @@ li{
 }
 
 .svIcon2{
-    width:4.5rem; !important
+    width:4.5rem !important;
 }
 
 .sv2{
     overflow: hidden;
 }
 
-/*AI 사용*/
-
-/* .aiV{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    gap: 2vw;
-    margin-bottom: 15rem;
-}
-
-
-.ai {
-    border: solid 2px #E0FD48;
-    grid-column: span 1;
-    grid-row: span 1;
-    background-color: #1e1e1e;
-    border-radius: 20px;
-    height: 6rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 1.2rem;
-    font-weight: 600;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.ai:hover{
-    background-color: #E0FD48;
-    color: black;
-    transform: scale(1.05);
-} */
-
-
 .aiV {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(4, 1fr);
     gap: 2vw;
-    margin-bottom: 15rem;
+    margin-bottom: 13rem;
     opacity: 0; 
   }
 
-  .ai:hover {
+.ai:hover {
         transform: scale(1.05);
         cursor: pointer;
   }
 
-
-  
-  .ai {
+.ai {
     border: solid 2px #1e1e1e;
     grid-column: span 1;
     grid-row: span 1;
@@ -650,37 +590,37 @@ li{
     transition: transform 0.3s ease;
   }
   
-  .aiV.visible {
+.aiV.visible {
     animation: fadeIn 1s ease forwards;
   }
   
-  .aiV.visible .ai:nth-child(1) {
+.aiV.visible .ai:nth-child(1) {
     animation: showBorder 0.3s ease forwards;
     animation-delay: 0s;
   }
   
-  .aiV.visible .ai:nth-child(2) {
+.aiV.visible .ai:nth-child(2) {
     animation: showBorder 0.3s ease forwards;
     animation-delay: 0.3s;
   }
   
-  .aiV.visible .ai:nth-child(3) {
+.aiV.visible .ai:nth-child(3) {
     animation: showBorder 0.3s ease forwards;
     animation-delay: 0.7s;
   }
   
-  .aiV.visible .ai:nth-child(4) {
+.aiV.visible .ai:nth-child(4) {
     animation: showBorderAndColor 0.3s ease forwards;
     animation-delay: 1s;
   }
   
-  /* 요소가 화면에서 벗어날 때의 스타일 */
-  .aiV:not(.visible) {
+
+.aiV:not(.visible) {
     opacity: 0;
     transform: translateY(20px);
   }
   
-  .aiV:not(.visible) .ai {
+.aiV:not(.visible) .ai {
     border-width: 0;
     background-color: #1e1e1e;
     color: white;
@@ -728,13 +668,12 @@ li{
 
 .kw-container {
     display: flex;
-    gap: 1rem; /* 각 키워드 간의 간격 */
-    justify-content: flex-end; /* 오른쪽 정렬 */
-    /* align-items: center; */
+    gap: 1rem; 
+    justify-content: flex-end; 
 }
 
 .vision1kw {
-    color: #E0FD48; /* 배경색 예시 */
+    color: #E0FD48; 
     padding: 0.5rem;
     border-radius: 20px;
     font-size: 1.2rem;
@@ -744,14 +683,11 @@ li{
     margin-bottom: 3rem;
 }
 
-
-
-
 .visionGrid{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2vw;
-    margin-bottom: 15rem;
+    margin-bottom: 13rem;
 }
 
 .vg1{
@@ -799,11 +735,11 @@ li{
     text-align: center;
     border-radius: 20px;
     width: 100%;
-    height: 15rem;
+    height: 13rem;
     font-size: 1.2rem;
     color:black;
     line-height: 3rem;
-    margin-bottom: 15rem;
+    margin-bottom: 13rem;
 }
 
 .naming{

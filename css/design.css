@@ -5,7 +5,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 3vw;
-    margin-bottom: 12rem;
+    margin-bottom: 13rem;
 }
 
 .keywordTxt {
@@ -127,7 +127,7 @@
 
 
 .designSystem{
-    margin-bottom: 12rem;
+    margin-bottom: 13rem;
     background-color: #1e1e1e;
     border-radius: 20px;
     width: 100%;
@@ -203,35 +203,33 @@
 
 
 .font, .mainColor, .subColor1, .subColor2, .subColor3 {
-    opacity: 0; /* 기본적으로 보이지 않게 설정 */
+    opacity: 0; 
     transition: opacity 0.4s ease-out, transform 0.4s ease-out; /* 애니메이션 속도 */
 }
 
-/* 각 요소에 대해 다른 방향에서 나타나도록 설정 */
 .font {
-    transform: translateX(-100%); /* 왼쪽에서 들어오는 효과 */
+    transform: translateX(-100%); 
 }
 
 .mainColor {
-    transform: translateY(-100%); /* 위에서 들어오는 효과 */
+    transform: translateY(-100%); 
 }
 
 .subColor1 {
-    transform: translateX(100%); /* 오른쪽에서 들어오는 효과 */
+    transform: translateX(100%); 
 }
 
 .subColor2 {
-    transform: translateY(100%); /* 아래에서 들어오는 효과 */
+    transform: translateY(100%); 
 }
 
 .subColor3 {
-    transform: translateX(110%); /* 왼쪽에서 들어오는 효과 */
+    transform: translateX(110%); 
 }
 
-/* 애니메이션 활성화 상태 */
 .font.visible, .mainColor.visible, .subColor1.visible, .subColor2.visible, .subColor3.visible {
-    opacity: 1; /* 보이게 설정 */
-    transform: translateY(0) translateX(0); /* 원래 위치로 이동 */
+    opacity: 1; 
+    transform: translateY(0) translateX(0); 
 }
 
 /*ICON SLIDER*/
@@ -248,8 +246,8 @@
     width: 100vw;
     position: absolute;
     left: 50%;
-    transform: translateX(-50%); /* 화면 중앙에 맞추기 */
-    overflow: hidden; /* 넘침 방지 */
+    transform: translateX(-50%); 
+    overflow: hidden; 
 }
 
 .icon-slider {
@@ -283,10 +281,9 @@
         transform: translateX(0);
     }
     100% {
-        transform: translateX(calc(-200px * 11 - 110px)); /* 아이콘 너비 * 개수 + (마진 * (개수-1)) */
+        transform: translateX(calc(-200px * 11 - 110px)); 
     }
 }
-
 
 
 
@@ -301,13 +298,13 @@
     
 }
 .logoGrid {
-    position: absolute; /* 절대 위치 */
-    top: 0; /* 원하는 위치 조정 */
-    left: 0; /* 원하는 위치 조정 */
+    position: absolute; 
+    top: 0; 
+    left: 0; 
     width: 302px; 
     margin: 90px 74.5px;
-    height: auto; /* 비율 유지 */
-    z-index: 2; /* 이미지가 가장 위에 있도록 설정 */
+    height: auto; 
+    z-index: 2; 
     animation: fadeIn2 3s ease; 
     align-self: center;
 }
@@ -330,7 +327,7 @@
 }
 
 .line1, .perpe, .diagonal, .containerC {
-    z-index: 1; /* 배경보다 아래에 표시 */
+    z-index: 1; 
 }
 .line1 {
     position: absolute;
@@ -403,9 +400,8 @@
 position: relative;
 width: 500px;
 height: 500px;
-
-/* background-color: red; */
 }
+
 .circleG {
     position: absolute;
     border-radius: 50%; 
